@@ -10,8 +10,6 @@
 
 [:embed](https://www.youtube.com/watch?v=LDldf2DGBas)
 
-`<details><summary><b>クリックでコマンド表示</b></summary>`{=html}
-
 ```{r yenderek}
 bind_rows(
   map_df(list.files("commands/", pattern = "yenderek", full.names = T), read_csv)
@@ -19,8 +17,6 @@ bind_rows(
   to_table(lr = F) %>%
   as_html_table
 ```
-
-`</details>`{=html}
 
 ### 歴史的背景
 

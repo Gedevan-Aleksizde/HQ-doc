@@ -24,7 +24,7 @@ map_df(list.files("commands/", pattern = "marie", full.names = T), read_csv) %>%
 
 ### 歴史的背景 {-}
 
-主にイタリアの Salvator Fabris のレイピア術を参考にしているらしい.^[https://www.youtube.com/channel/UCJEW7luxXj7XhzUGwpxW5OQ/community?lb=UgwVhPRM-shqv90PqhZ4AaABCQ]. 17世紀初頭に書かれた Scienza d'Arme のことだと思われる.
+開発者によると, 主にイタリアの Salvator Fabris のレイピア術を参考にしているらしい.^[https://www.youtube.com/channel/UCJEW7luxXj7XhzUGwpxW5OQ/community?lb=UgwVhPRM-shqv90PqhZ4AaABCQ]. 17世紀初頭に書かれた Scienza d'Arme のことだと思われる.
 
 [:embed](https://www.pinterest.jp/pin/1144125480308815366/)
 
