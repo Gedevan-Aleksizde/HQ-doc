@@ -398,7 +398,7 @@ make_direct_buttons <- function(
 }
 
 reuse_svg <- function(id){
-  sprintf('<svg height=40 width=40><use xlink:href="#%s" /></svg>', id)
+  sprintf('<img height=40 width=40 href="%s" />', id)
 }
 
 replace_keys <- function(text){
@@ -407,8 +407,8 @@ replace_keys <- function(text){
     map(~tibble(str = if(length(.x[, 1]) == 0) "" else .x[, 1]) %>% mutate(
       is_key = str_detect(str, "\\[([TYGHRLUD\\+]+?)\\]"),
       str = if_else(is_key,
-                    # str_replace_all(str, "\\[([TYGHUDLR\\+]+?)\\]", "img/\\1.svg") %>%
-                    str_replace_all(str, "\\[([TYGHUDLR\\+]+?)\\]", "key-\\1") %>%
+                    str_replace_all(str, "\\[([TYGHUDLR\\+]+?)\\]", "img/\\1.svg") %>%
+                    # str_replace_all(str, "\\[([TYGHUDLR\\+]+?)\\]", "key-\\1") %>%
                       sapply(reuse_svg) %>%
                       unlist,
                     str),
@@ -456,31 +456,31 @@ to_table <- function(d, lr = F){
       long = "ロングガード時 - [スペース] 押しっぱなし",
       low = html(
         sprintf("下段の構え時 - %s + [スペース] 押しっぱなし)",
-                paste(reuse_svg("key-D"), collapse = "\n"))
+          paste(reuse_svg("key-D"), collapse = "\n"))
         ),
       iron = html(
-          sprintf("〈鉄の門〉の構え時 - %s + [スペース] 押しっぱなし",
-                  paste(readLines("img/D.svg"), collapse = "\n"))
-          ),
+        sprintf("『鉄の門』の構え時 - %s + [スペース] 押しっぱなし",
+          paste(readLines("img/D.svg"), collapse = "\n"))
+        ),
       high = html(
-          sprintf("〈上段〉の構え時 (%s + [スペース] 押しっぱなし)",
-                  paste(reuse_svg("key-U"), collapse = "\n"))
-          ),
+        sprintf("『上段』の構え時 (%s + [スペース] 押しっぱなし)",
+          paste(reuse_svg("key-U"), collapse = "\n"))
+        ),
       boartusk = html(
-        sprintf("〈猪の牙〉の構え時 (%s + 「スペース」押しっぱなし)",
+        sprintf("『猪の牙』の構え時 (%s + 「スペース」押しっぱなし)",
                 paste(reuse_svg("key-U"), collapse = "\n"))
-      ),
+        ),
       donna = html(
-        sprintf("〈貴婦人〉の構え時 (%s  %s %s)",
-                paste(reuse_svg("key-D"), collapse = "\n"),
-                paste(reuse_svg("key-L"), collapse = "\n"),
-                paste(reuse_svg("key-Y"), collapse = "\n")
-                )
+        sprintf("『貴婦人』の構え時 (%s  %s %s)",
+          paste(reuse_svg("key-D"), collapse = "\n"),
+          paste(reuse_svg("key-L"), collapse = "\n"),
+          paste(reuse_svg("key-Y"), collapse = "\n")
+        )
       ),
-      holy = html(sprintf("〈聖なる〉構え時 (%s)", paste(reuse_svg("key-D"), reuse_svg("key-R"), reuse_svg("key-Y"), collapse = "\n"))),
-      roof = html(sprintf("〈屋根〉の構え時 (%s + [スペース] 押しっぱなし)", reuse_svg("key-U"))),
-      fool = html(sprintf("〈愚者〉の構え時 (%s + [スペース] 押しっぱなし)", reuse_svg("key-D"))),
-      misc = html(" ")
+      holy = html(sprintf("『聖なる』構え時 (%s)", paste(reuse_svg("key-D"), reuse_svg("key-R"), reuse_svg("key-Y"), collapse = "\n"))),
+      roof = html(sprintf("『屋根』の構え時 (%s + [スペース] 押しっぱなし)", reuse_svg("key-U"))),
+      fool = html(sprintf("『愚者』の構え時 (%s + [スペース] 押しっぱなし)", reuse_svg("key-D"))),
+      misc = html("共通コマンド")
     )
     t$`_stub_df`[["group_label"]] <- map(t$`_stub_df`[["group_label"]], ~html(g_headings[[.x]]))
   if(lr){
