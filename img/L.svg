@@ -1,0 +1,22 @@
+<svg class='svglite' width='29.10pt' height='29.10pt' viewBox='0 0 29.10 29.10'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+  ]]></style>
+</defs>
+
+<line x1='14.55' y1='14.55' x2='14.55' y2='6.78' style='stroke-width: 3.00; stroke: #EBEBEB; stroke-linecap: butt; stroke-linejoin: miter;' />
+<polygon points='18.07,10.31 14.55,6.78 11.03,10.31 ' style='stroke-width: 3.00; stroke: #EBEBEB; stroke-linecap: butt; stroke-linejoin: miter; fill: #EBEBEB;' />
+<line x1='14.55' y1='14.55' x2='14.55' y2='22.32' style='stroke-width: 3.00; stroke: #EBEBEB; stroke-linecap: butt; stroke-linejoin: miter;' />
+<polygon points='11.03,18.80 14.55,22.32 18.07,18.80 ' style='stroke-width: 3.00; stroke: #EBEBEB; stroke-linecap: butt; stroke-linejoin: miter; fill: #EBEBEB;' />
+<line x1='14.55' y1='14.55' x2='22.32' y2='14.55' style='stroke-width: 3.00; stroke: #EBEBEB; stroke-linecap: butt; stroke-linejoin: miter;' />
+<polygon points='18.80,18.07 22.32,14.55 18.80,11.03 ' style='stroke-width: 3.00; stroke: #EBEBEB; stroke-linecap: butt; stroke-linejoin: miter; fill: #EBEBEB;' />
+<line x1='14.55' y1='14.55' x2='6.78' y2='14.55' style='stroke-width: 3.00; stroke-linecap: butt; stroke-linejoin: miter;' />
+<polygon points='10.31,11.03 6.78,14.55 10.31,18.07 ' style='stroke-width: 3.00; stroke-linecap: butt; stroke-linejoin: miter; fill: #000000;' />
+</svg>

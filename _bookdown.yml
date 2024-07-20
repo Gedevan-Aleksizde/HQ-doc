@@ -1,0 +1,31 @@
+book_filename: "HQ-doc"
+output_dir: 'docs/'
+repo: https://github.com/Gedevan-Aleksizde/HQ-doc
+delete_merged_file: true
+rmd_subdir: "content/JP"
+clean: 
+  - packages.bib
+  - HQ-doc.tikzDictionary
+  - jauthoryear.bbx
+  - jauthoryear.cbx
+  - '_latex'
+language:
+  label:
+    fig: '図 '
+    tab: '表 '
+    eq: '式 '
+    thm: '定理 '
+    lem: '補題 '
+    cor: '系 '
+    prp: '命題 '
+    cnj: '予想 '
+    def: '定義 '
+    exm: '例 '
+    exr: '練習 '
+    proof: '証明. '
+    remark: '用例. '
+    solution: '解答. '
+  ui:
+    chapter_name: ""
+edit: "https://github.com/Gedevan-Aleksizde/HQ-doc/edit/master/%s"
+# before_chapter_script: "utils.R"
