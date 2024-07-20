@@ -1,0 +1,31 @@
+## マリー/Marie {#Marie}
+
+### 概要 {-}
+
+最初期からいるレイピアを使うキャラクターである. アーケードモードでフランスに関係のある人物であることが示唆されたため, 本稿ではフランス語風に「マリー」表記とした.
+
+通常攻撃の `r replace_keys("[T] [H]")` が突き攻撃に, `r replace_keys("[Y] [G]")` が振り攻撃になっている. 突き主体のキャラクターのためコマンドが変速的で, 過去に何度か大きな変更がなされている. ロングガードとは別に, 剣を立てる上段と剣を下げる下段の2通りの構えがある.
+
+最初期はコマンドがとても少なかったが, 後のアップデートで現在の複数の構えを持つキャラクターになった.
+
+### コマンド {-}
+
+```{r marie}
+map_df(list.files("commands/", pattern = "marie", full.names = T), read_csv) %>%
+  bind_rows(read_csv("commands/misc_common.csv")) %>%
+  to_table() %>%
+  as_html_table
+```
+
+以下は 2021.12.18 時点での Marie のコマンドに対するいくつかの注意点である.
+
+* Offhand Parry は名前や動きから, 左手で相手の剣を払いつつ反撃する動作のようだが, 左手の当たり判定はどうなっているのかよくわからない (練習できてないのでよくわからない)
+* Circle と Circle to Lunge は入力待ち時間が厳しいのかミスなのかそれっぽい技が発動しない
+
+### 歴史的背景 {-}
+
+主にイタリアの Salvator Fabris のレイピア術を参考にしているらしい.^[https://www.youtube.com/channel/UCJEW7luxXj7XhzUGwpxW5OQ/community?lb=UgwVhPRM-shqv90PqhZ4AaABCQ]. 17世紀初頭に書かれた Scienza d'Arme のことだと思われる.
+
+[:embed](https://www.pinterest.jp/pin/1144125480308815366/)
+
+名前がイタリアっぽくないと思っていたら, アーケードモードでフランスに関係のある人物だということが明かされた.

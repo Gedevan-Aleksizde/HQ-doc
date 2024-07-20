@@ -1,0 +1,36 @@
+## ゲデオン/Gedeon {#Gedeon}
+
+### 概要 {-}
+
+最初期からいるキャラクターで, 肥満の中年男性の見た目をしている. 最初期は左手にマグを持っていたが, 早い段階でなくなった.
+
+対角線反対側からの攻撃またはバックステップ時に左右の足を切り替える動作が多い. 突き攻撃や大きく踏み込んで間合いを詰める動作が乏しい. 上半身がよく動くので左右に振りながら戦えば相手は間合いを把握しにくいかもしれない. ロングガード時のコマンドが左右どちらの足が前かで変化する.
+
+### コマンド
+
+```{r, gedeon}
+map_df(list.files("commands/", pattern = "gedeon", full.names = T), read_csv) %>%
+  bind_rows(read_csv("commands/misc_common.csv")) %>%
+  to_table(lr = T) %>%
+  as_html_table
+```
+
+### 歴史的背景 {-}
+
+Sieniawski 氏のスタイル (Sztuka Krzyżowa) に基づいている. この動画がわかりやすいだろう.
+
+太った酒飲みの中年という見た目は Ogniem i Mieczem の Zagłoba を想起させる.
+
+[:embed](https://www.youtube.com/watch?v=UB4AUAkDI5k]
+[:embed](https://www.youtube.com/watch?v=saX3NqQVVjA]
+
+このスタイルは 16-17世紀の文献を参考にしているが, Starzewski と違い原典となるマニュアルは存在しない. 以前紹介した [Zrodzeni do Szabli](https://vimeo.com/ondemand/bornforthesaber) や彼らの[オンライン教材](https://www.sieniawski-fencing.com/kurs-online)を見るといいだろう. 最近はショート動画も参考になるものが増えている.
+
+[:embed]](https://www.youtube.com/@sieniawskifencing)
+
+
+`<details><summary><b>裏話</b></summary>`{=html}
+
+Sieniawski 氏本人に直接レッスンを受けた際に質問した. 得られたコメントを要約するとこうなる. 「確かにこのキャラクターの構えのいくつかは私のスタイルによく似ている. でも(レッスンで教えたことを踏まえて)あなたも分かるように, 私の戦い方のコンセプトに反している動作や, 隙ができるような問題のある動作もいくつもある. 例えば, Gedeonは剣の振りと踏み込みをほぼ同時にやっている. これでは足の踏ん張りの強さが斬撃に伝わらない. そしてそもそも, **私はこのキャラクターの作成に関わっていない**」 最後の暴露話はともかく, コンセプトはオンライン教材でもそれなりに説明されているので, 見ればわかると思う.
+
+`</details>`{=html}
