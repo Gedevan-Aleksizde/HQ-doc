@@ -1,9 +1,9 @@
 project:
   type: website
   output-dir: docs
-  render:
-    - "index.qmd"
-    - "content/JP"
+#  render:
+#    - "index.qmd"
+#    - "content/JP"
 lang: ja
 toc: true
 format:
@@ -12,6 +12,8 @@ format:
     html-math-method: katex
 metadata-files:
   - _website.yml
+resources:
+  - "img/*"
 execute:
     message: false
     echo: false

@@ -1,5 +1,5 @@
 ---
-title: "``Hellish Quart” のコマンド表"
+title: "Hellish Quart のコマンド表"
 author: "under-identified"
 description: "Hellish Quart日本語情報"
 site: bookdown::bookdown_site
@@ -14,9 +14,15 @@ params:
 
 # 概要 {-}
 
-:::{.callout-note}
+:::{.callout-warning}
 
 Hellish Quart は現在アーリーアクセス状態です. 仕様が頻繁に変更されることに注意してください. このドキュメントは **`r params$gamever`** 準拠のものです.
+
+:::
+
+:::{.callout-note}
+
+このサイトのコンテンツを [クリエイティブコモンズ表示4.0国際ライセンス](https://creativecommons.org/licenses/by/4.0/deed.ja) で公開します. ライセンスと著作権の許容する範囲で自由にお使いください. 掲載されている一部の画像や動画には, 個別に著作権やライセンスが指定されている場合があります.
 
 :::
 

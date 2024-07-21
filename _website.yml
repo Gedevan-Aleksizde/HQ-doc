@@ -1,10 +1,32 @@
 website:
   title: "Hellish Quart 日本語情報"
+  repo-url: https://github.com/Gedevan-Aleksizde/HQ-doc
+  repo-actions: [edit, issue]
   sidebar:
-    collapse-level: 1
+    collapse-level: 3
     style: docked
-    contents: auto
+    contents:
+      - text: "Top"
+        href: index.qmd
+      - section: "基本"
+        href: content/jp/basics.qmd
+        contents: content/jp/basics/*
+      - section: "キャラクター"
+        href: content/jp/characters.qmd
+        contents:
+          - section:
+            href: content/jp/sabers.qmd
+            contents: content/jp/characters/sabers/*
+          - section:
+            href: content/jp/longswords.qmd
+            contents: content/jp/characters/longswords/*
+          - section:
+            href: content/jp/rapiers.qmd
+            contents: content/jp/characters/rapiers/*
+          - section:
+            href: content/jp/extras.qmd
+            contents: content/jp/characters/extras/*
   navbar:
     left:
-      - href: "index.qmd"
-        text: "Top"
+      - text: "Top"
+        href: "index.qmd"
