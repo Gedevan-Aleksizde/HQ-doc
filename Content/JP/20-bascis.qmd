@@ -1,12 +1,18 @@
-
 # 基本
+
+```{r}
+#| label: setup
+
+source(here::here("script/common.R"))
+```
 
 ## 操作に関する基本事項
 
-`><figure class="figure-image figure-image-fotolife" title="基本攻撃 (Meyer 風の表現)">[f:id:ill-identified:20210506224602p:plain]<figcaption>基本攻撃 (Meyer 風の表現)</figcaption></figure><`{=html}
+```{r}
+#| fig-cap: "基本攻撃 (Meyer 風の表現)"
+#| fig-align: center
 
-```{r, fig.cap="基本攻撃", fig.align='center', eval=F}
-knitr::include_graphics("img/square.png")
+knitr::include_graphics(here::here("img/square.png"))
 ```
 
 
@@ -19,7 +25,7 @@ knitr::include_graphics("img/square.png")
 
 ### 攻撃
 
-攻撃操作も鉄拳と似ている. 右側の4つのボタンは四方向からの攻撃におおむね対応している. `r reuse_svg(paste0("key-", c("T", "Y")))` は左右の斬り下ろし攻撃で, `r reuse_svg(paste0("key-", c("G", "H")))` は左右の斬り上げまたは下段攻撃になり, キーボードのデフォルト設定も隣接する4つのキー `r knitr::asis_output(paste(readLines("img/4keys.svg"), collapse=""))` がこれに対応する. ほとんどの基本攻撃は対角線を描くようになされる.
+攻撃操作も鉄拳と似ている. 右側の4つのボタンは四方向からの攻撃におおむね対応している. `r reuse_svg(c("T", "Y"))` は左右の斬り下ろし攻撃で, `r reuse_svg(c("G", "H"))` は左右の斬り上げまたは下段攻撃になり, キーボードのデフォルト設定も隣接する4つのキー `r knitr::asis_output(paste(readLines(here::here("img/4keys.svg")), collapse=""))` がこれに対応する. ほとんどの基本攻撃は対角線を描くようになされる.
 
 
 ### 防御

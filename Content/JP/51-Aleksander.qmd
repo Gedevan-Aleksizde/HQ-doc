@@ -1,0 +1,50 @@
+## アレクサンデル/Aleksander {#sec-Aleksander}
+
+```{r}
+source(here::here("script/common.R"))
+```
+
+### 概要 {-}
+
+{{< video https://www.youtube.com/watch?v=Mp85Y_NKcNs >}}
+
+2022.04.09.0で追加された. Alexander だったり Aleksander だったり表記が統一されていない. Aleksander Denis という実在の人物をモチーフにしているため, ここでは Aleksander 表記にした.
+
+前腕だけを使った速いカットが多いが, 実は剣がやや短い?^[練習モードだと棒を持つ位置を詰めているのではっきりとわかる]. 待機状態でも常に左右の足を動かし差し替えている. 素早く威力の高い斬撃が特徴だが, 剣が小さいためか自動防御に失敗しやすい気がする. 当時のヨーロッパ側の文献は, 中東の兵士は剣で打ち合うことをせず, 間合いを取って回避するスタイルだったと書いているらしいので, アレクサンデルについても, 左右のステップに同期して移動キーを押すと素早く動けるかもしれない. 
+
+以前は, 左右でコマンドが変化していたが, 2023.05.04の更新で廃止され左右共通となった.
+
+### コマンド
+
+:::{.panel-tabset}
+
+#### ゲームパッド
+
+```{r}
+#| label: alex
+
+map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table() %>%
+  as_html_table
+```
+
+test
+
+#### キーボード
+
+test2
+
+:::
+
+### 歴史的背景 {-}
+
+紹介動画によれば, [Aleksander Denis](http://historia.kozieglowy.org/r-3-kozieglowy-w-ksiestwie-siewierskim/) という実在の人物をモデルにしているらしい. アニメーションは [Da'Mon Stith](https://www.youtube.com/c/DaMonStith) というアフリカ武術の専門家と, 『鉄拳』シリーズに登場するカポエイリスタであるエディの両方を参考にしている. そして, どちらかというと後者の要素のほうが大きいようだ.
+
+剣の見た目はMET所蔵のニムチャを参考にしている?
+
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480307894604" height="617" width="345" frameborder="0" scrolling="no" ></iframe>
+
+衣装のバリアントは18世紀に流行したジュパン (żupan) とコントゥシュ (kontusz) の組み合わせを参考にしているのだろう.^[その後, パッチノートに kontusz と書いているのを見つけた.]
+
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480309825692" height="734" width="345" frameborder="0" scrolling="no" ></iframe>

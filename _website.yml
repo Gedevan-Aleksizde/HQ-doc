@@ -1,0 +1,10 @@
+website:
+  title: "Hellish Quart 日本語情報"
+  sidebar:
+    collapse-level: 1
+    style: docked
+    contents: auto
+  navbar:
+    left:
+      - href: "index.qmd"
+        text: "Top"

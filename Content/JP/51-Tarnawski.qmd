@@ -1,23 +1,32 @@
-## タルナフスキ/Tarnavski {#Tarnawski}
+## タルナフスキ/Tarnawski {#sec-Tarnawski}
+
+```{r}
+source(here::here("script/common.R"))
+```
 
 ### 概要 {-}
 
-`><figure class="figure-image figure-image-fotolife" title="Tarnavskiの左ロングガード">[f:id:ill-identified:20240707224554j:plain]<figcaption>Tarnavskiの左ロングガード</figcaption></figure><`{=html}
+```{r}
+#| fig-cap: "タルナフスキの左ロングガード"
+#| fig-aling: "center"
+knitr::include_graphics(here::here("img/Tarnawski.jpg"))
+```
 
-v2024.04.10から登場した.
+v2024.04.10から登場した. 名前の表記に揺らぎが多い. Tarnavskiの他に, Tarnavsky, Tarnawski になっている箇所もある. 最後の表記が最もポーランド語風である. だがタルナフスキは姓なので, 個人名ではなさそうだ.
 
 ドイツ風のドゥサックを使用するキャラクターで, [ゲデオン](#Gedeon)のように一部の攻撃によって構えの足の左右が切り替わり, コマンドも一部変化する. さらに, [サムエル](#Samuel)のように構えが複数ある. ~~複雑すぎるのでアレクサンデルみたいにオミットされそう.~~ 左右が切り替わる条件は, 前後どちらかに移動しつつ対角線上に反対方向へ向かう攻撃をすることのようだ. 左前時のロングガードの姿勢がかなり変わっているが, ちゃんと突き攻撃への防御判定があった. むしろ左前下段の構えが防御できそうな姿勢に見えてできないことに注意したほうがよいかもしれない. 剣が短い代わりに, 全身を大きく動かして攻撃するため, 思ったよりも遠くまで攻撃が届くことがある. しかしそのぶん, 通常攻撃であっても大振りになったり, 起こりに隙ができたりするものもある. 使うなら他のキャラクター以上に動作をよく覚えておいたほうが良いかもしれない.
-
-名前の表記に揺らぎが多い. Tarnavskiの他に, Tarnavsky, Tarnawski になっている箇所もある. 最後の表記が最もポーランド語風である. だがタルナフスキは姓なので, 個人名ではなさそうだ.
 
 コマンド表にパークスキルという謎の文言がある. 他のキャラクターのコマンド表には書かれていないし, 具体的にどういう効果があるのかも明かされていない. キャラクターごとの特性を表す意図なのか, あるいは他の意図なのかは分からない.
 
 ### コマンド {-}
 
-```{r tarnavski}
+```{r}
+#| label: tarnawski
+
 bind_rows(
-  map_df(list.files("commands/", pattern = "tarnavski", full.names = T), ~read_csv(.x, col_types = "c"))
-  ) %>% bind_rows(read_csv("commands/misc_common.csv", col_types = "c")) %>%
+  map_df(list.files(here::here("commands/"), pattern = "tarnawski", full.names = T), ~read_csv(.x, col_types = "c"))
+  ) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"), col_types = "c")) %>%
   to_table(lr = T) %>%
   as_html_table
 ```
@@ -26,10 +35,10 @@ bind_rows(
 
 原型となった実在の人物がいるのかは知らないが, 動きは16世紀ドイツのMeyerスタイルのドゥサックそっくりである. Dussackの文献は17世紀以降にもあるので, そっちの動きも取り入れてほしい...
 
-[:embed](https://www.pinterest.jp/pin/1144125480328793373/)
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480328793373" height="507" width="345" frameborder="0" scrolling="no" ></iframe>
 
 Meyerスタイル研究家のBjörn Rüther氏による, ドゥサックのスパーリングを主観視点で撮影したけっこう昔の動画
 
-[:embed](https://www.youtube.com/watch?v=cpkGOnvxe0c)
+{{< video video https://www.youtube.com/watch?v=cpkGOnvxe0c >}}
 
 ドゥサック (dussack) という用語には注意が必要である. この業界ではドゥサックというとMeyerの武術書に書かれているような, 練習用に革で保護された木製のやや短い曲刀か, より古い時代のチェコで使用された, 包丁をそのまま大きくしたような片手剣の Tesák を指す事が多い. しかしながら現代のドイツ語では, 比較的古いサーベルやカットラスなどの片刃剣全般を指す語としても使われているようである^Säbel とどう使い分けてるのかよく分からない...]. 実際, タルナフスキが使用しているドゥサックはサーベル風の形状である. こういった用語の混乱は, 「長剣」も「ロングソード」も, 使われていた当時はそのような名前で呼ばれていなかったのと同じで, 解決の難しい問題である.

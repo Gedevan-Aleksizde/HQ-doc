@@ -1,4 +1,8 @@
-## イザベラ/Isabella {#Isabella}
+## イザベラ/Isabella {#sec-Isabella}
+
+```{r}
+source(here::here("script/common.R"))
+```
 
 ### 概要 {-}
 
@@ -15,10 +19,13 @@
 
 ### コマンド表 {-}
 
-```{r isabella}
+```{r}
+#| label: isabella
+
 bind_rows(
-  map_df(list.files("commands/", pattern = "isabella", full.names = T), read_csv)
-  ) %>% bind_rows(read_csv("commands/misc_common.csv")) %>%
+  map_df(list.files(here::here("commands/"), pattern = "isabella", full.names = T), read_csv)
+  ) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
   to_table(lr = T) %>%
   as_html_table
 ```
@@ -27,6 +34,6 @@ bind_rows(
 
 14-15世紀イタリアの武術家, Fiore d'ei Liberi の武術書に基づいた動きをしている. 開発者が動画で「Fiore の流派の長剣使いのキャラクターとして作ろうとしたが, Liechtenauer とごっちゃになってしまった」と述べている. この流派の動きを切れ目なく連続しているものが多いのでゲームに落とし込むのに苦労したらしい. そのため, かつては Fiore と 同時代のドイツの Lichtenauer 流の動きが混在していたが, アップデートでより純粋な Fiore の動きに寄せていく変更が何度かなされている. (しかし, 一度消えたLiechtenauer式のZwerhauが復活してしまった)
 
-[:embed](https://www.pinterest.jp/pin/1144125480308815569/)
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480308815569" height="597" width="345" frameborder="0" scrolling="no" ></iframe>
 
 だが, 実際の17世紀イタリアで未だにFioreのスタイルを守っている人間がいたのかは分からない.

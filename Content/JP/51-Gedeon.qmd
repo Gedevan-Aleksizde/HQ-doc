@@ -1,4 +1,8 @@
-## ゲデオン/Gedeon {#Gedeon}
+## ゲデオン/Gedeon {#sec-Gedeon}
+
+```{r}
+source(here::here("script/common.R"))
+```
 
 ### 概要 {-}
 
@@ -10,9 +14,11 @@ HPが他のキャラクターより高めに設定されているらしい.
 
 ### コマンド
 
-```{r, gedeon}
-map_df(list.files("commands/", pattern = "gedeon", full.names = T), read_csv) %>%
-  bind_rows(read_csv("commands/misc_common.csv")) %>%
+```{r}
+#| label: gedeon
+
+map_df(list.files(here::here("commands/"), pattern = "gedeon", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
   to_table(lr = T) %>%
   as_html_table
 ```
@@ -23,12 +29,12 @@ Sieniawski 氏のスタイル (Sztuka Krzyżowa) に基づいている. この�
 
 太った酒飲みの中年という見た目は Ogniem i Mieczem の Zagłoba を想起させる.
 
-[:embed](https://www.youtube.com/watch?v=UB4AUAkDI5k]
-[:embed](https://www.youtube.com/watch?v=saX3NqQVVjA]
+{{< video https://www.youtube.com/watch?v=UB4AUAkDI5k >}}
+{{< video https://www.youtube.com/watch?v=saX3NqQVVjA >}}
 
 このスタイルは 16-17世紀の文献を参考にしているが, Starzewski と違い原典となるマニュアルは存在しない. 以前紹介した [Zrodzeni do Szabli](https://vimeo.com/ondemand/bornforthesaber) や彼らの[オンライン教材](https://www.sieniawski-fencing.com/kurs-online)を見るといいだろう. 最近はショート動画も参考になるものが増えている.
 
-[:embed]](https://www.youtube.com/@sieniawskifencing)
+{{< video https://www.youtube.com/@sieniawskifencing >}}
 
 
 `<details><summary><b>裏話</b></summary>`{=html}

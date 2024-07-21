@@ -1,8 +1,12 @@
-## ヤツェク/Jacek Dydyński {#Jacek}
+## ヤツェク/Jacek Dydyński {#sec-Jacek}
+
+```{r}
+source(here::here("script/common.R"))
+```
 
 ### 概要 {-}
 
-[:embed](https://www.youtube.com/watch?v=J9AWiNIvllc)
+{{< video https://www.youtube.com/watch?v=J9AWiNIvllc >}}
 
 v2023.09.08から登場した. 登場に伴い, これまでパッケージ画像で中央にいて主人公っぽい雰囲気だったヤツェクと名乗っていたキャラクターは「[ヤン] (#Jan)」に改名されてしまった.
 
@@ -11,9 +15,12 @@ v2023.09.08から登場した. 登場に伴い, これまでパッケージ画�
 ### コマンド {-}
 
 ```{r jacek2}
+#| label: jacek2
+
 bind_rows(
-  map_df(list.files("commands/", pattern = "jacek2", full.names = T), ~read_csv(.x, col_types = "c"))
-  ) %>% bind_rows(read_csv("commands/misc_common.csv", col_types = "c")) %>%
+  map_df(list.files(here::here("commands/"), pattern = "jacek2", full.names = T), ~read_csv(.x, col_types = "c"))
+  ) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"), col_types = "c")) %>%
   to_table(lr = T) %>%
   as_html_table
 ```
@@ -25,8 +32,8 @@ bind_rows(
 
 こっちはかなり前にオルブリフスキ氏の所属している Akademia Szermierzy の公開した動画で, 本人も出演している. (ここで使われてる衣装の作者を知っている気がする...)
 
-[:embed](https://www.youtube.com/watch?v=QttVCVXe8tc)
+{{< video https://www.youtube.com/watch?v=QttVCVXe8tc >}}
 
 これも古いが, 祖父と共に実演している(アントニオルブリフスキファンクラブ個人サイトみたいになってきた)
 
-[:embed](https://www.youtube.com/watch?v=M8Wp1DsfDDI)
+{{< video https://www.youtube.com/watch?v=M8Wp1DsfDDI >}}

@@ -1,4 +1,8 @@
-## バラバシ/Barabasz {#Barabasz}
+## バラバシ/Barabasz {#sec-Barabasz}
+
+```{r}
+source(here::here("script/common.R"))
+```
 
 ### 概要 {-}
 
@@ -10,9 +14,11 @@
 
 ### コマンド {-}
 
-```{r barabasz}
-map_df(list.files("commands/", pattern = "barabasz", full.names = T), read_csv) %>%
-  bind_rows(read_csv("commands/misc_common.csv")) %>%
+```{r}
+#| label: barabasz
+
+map_df(list.files(here::here("commands/"), pattern = "barabasz", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
   to_table() %>%
   as_html_table
 ```

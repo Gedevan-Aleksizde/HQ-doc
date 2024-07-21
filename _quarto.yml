@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "index.qmd"
+    - "content/JP"
+lang: ja
+toc: true
+format:
+  html:
+    css: syle.css
+    html-math-method: katex
+metadata-files:
+  - _website.yml
+execute:
+    message: false
+    echo: false
+    warning: false
+    output: "asis"
+    include: false
+params:
+  gamever: 2024.07.07.0

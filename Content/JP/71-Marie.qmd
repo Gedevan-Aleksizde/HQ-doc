@@ -1,4 +1,8 @@
-## マリー/Marie {#Marie}
+## マリー/Marie {#sec-Marie}
+
+```{r}
+source(here::here("script/common.R"))
+```
 
 ### 概要 {-}
 
@@ -10,9 +14,11 @@
 
 ### コマンド {-}
 
-```{r marie}
-map_df(list.files("commands/", pattern = "marie", full.names = T), read_csv) %>%
-  bind_rows(read_csv("commands/misc_common.csv")) %>%
+```{r}
+#| label: marie
+
+map_df(list.files(here::here("commands/"), pattern = "marie", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
   to_table() %>%
   as_html_table
 ```
@@ -26,6 +32,6 @@ map_df(list.files("commands/", pattern = "marie", full.names = T), read_csv) %>%
 
 開発者によると, 主にイタリアの Salvator Fabris のレイピア術を参考にしているらしい.^[https://www.youtube.com/channel/UCJEW7luxXj7XhzUGwpxW5OQ/community?lb=UgwVhPRM-shqv90PqhZ4AaABCQ]. 17世紀初頭に書かれた Scienza d'Arme のことだと思われる.
 
-[:embed](https://www.pinterest.jp/pin/1144125480308815366/)
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480308815366" height="368" width="345" frameborder="0" scrolling="no" ></iframe>
 
 名前がイタリアっぽくないと思っていたら, アーケードモードでフランスに関係のある人物だということが明かされた.

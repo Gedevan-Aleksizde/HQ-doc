@@ -1,8 +1,12 @@
-## マルタ/Marta {#Marta}
+## マルタ/Marta {#sec-Marta}
+
+```{r}
+source(here::here("script/common.R"))
+```
 
 ### 概要 {-}
 
-[:embed](https://www.youtube.com/watch?v=exF2HpY6AdE)
+{{< video https://www.youtube.com/watch?v=exF2HpY6AdE >}}
 
 v2022.07.29 で追加された, マリーに続く2人目のレイピア使いである. ベータ版での名前は Mafra だったがタイポだったようだ.
 
@@ -12,9 +16,11 @@ v2022.07.29 で追加された, マリーに続く2人目のレイピア使い�
 
 ### コマンド {-}
 
-```{r marta}
-map_df(list.files("commands/", pattern = "marta", full.names = T), read_csv) %>%
-  bind_rows(read_csv("commands/misc_common.csv")) %>%
+```{r}
+#| label: marta
+
+map_df(list.files(here::here("commands/"), pattern = "marta", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
   to_table %>%
   as_html_table
 ```
@@ -25,6 +31,6 @@ map_df(list.files("commands/", pattern = "marta", full.names = T), read_csv) %>%
 
 マルタのレイピアはマリーのレイピアと異なり, 鍔が椀状になっているため, このような形状のレイピアは現在では cup-hilted rapier と呼ばれることが多い. このタイプはこの時代のスペインでよく使われていた (もちろん椀型でないものも多く見られるし, スペイン以外にも波及している). 現存しているものは凝った装飾のあるものが多いが, ケンブリッジ大のフリッツウィリアム博物館のものがシンプルでゲーム中のものに近い. ただしこの個体はスペイン製なのか不明である.
 
-[:embed](https://www.pinterest.jp/pin/1144125480309449291/)
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480309449291" height="361" width="345" frameborder="0" scrolling="no" ></iframe>
 
 HEMAもやっているスペインのあるプレイヤーにDiscordで聞いた話によると, Marta のスタイルはスペインの Verdadera Destreza に似ているという. 理論と法則性のある動きを重視するスタイルで, 主にダーティープレイを嫌う当時の貴族層が好んだ剣術の流派らしい. しかし, 現時点ではこの時代のイベリア式剣術に関する文献はもっぱらスペイン語で, (日本語は言うまでもなく) 英訳されたものはわずかしかない. この人に教えてもらったものでも最近出た2冊だけで, 現代のスペインの剣術家 Alberto Bomprezzi によって再構築された教本と, 17世紀当時のLuis Pachecoによる文献の英訳がそれぞれ1種類だけである. そしてどちらもページ数は少ない.

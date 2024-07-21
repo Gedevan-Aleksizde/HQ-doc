@@ -1,8 +1,12 @@
-## カルクシュタイン/Kalkstein {#Kalkstein}
+## カルクシュタイン/Kalkstein {#sec-Kalkstein}
+
+```{r}
+source(here::here("script/common.R"))
+```
 
 ### 概要 {-}
 
-[:embed](https://www.youtube.com/watch?v=LDYyk-RKJnI)
+{{< video https://www.youtube.com/watch?v=LDYyk-RKJnI >}}
 
 2021.06.23のアップデートで追加された, スキアヴォーナを使用するキャラクターである. 出自に関する詳しい設定は明かされていないが, 本稿ではドイツ語風に「カルクシュタイン」表記にしている.
 
@@ -10,9 +14,11 @@
 
 ### コマンド {-}
 
-```{r kalkstein}
-map_df(list.files("commands/", pattern = "kalkstein", full.names = T), read_csv) %>%
-  bind_rows(read_csv("commands/misc_common.csv")) %>%
+```{r}
+#| label: kalkstein
+
+map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
   to_table(lr = T) %>%
   as_html_table
 ```
@@ -21,12 +27,14 @@ map_df(list.files("commands/", pattern = "kalkstein", full.names = T), read_csv)
 
 開発者は当初ボローニャ流にしようとしたが, 練習用に用意した剣が重かったので重い剣を活かしたアレンジを入れることを思いついたらしい. バスケットヒルトソードはスコットランドやスイスなどいろいろな地域・時代に見られ, 私はあまり見分けられる自信がないが, 作者の動画によればスキアヴォーナ (Schiavona) というタイプの剣だと言っている. これはルネッサンス-18cにヴェネツィア周辺で流行した剣である.^[参考: 三浦權利『西洋甲冑武器事典』柏書房), H. J. S. Withers "The Sword Encyclopedia of Swords and Sabers,"  Hermes House]. そっくりな形状の剣はポーランドの博物館にもあるようだ. 私もポーランド国内のいくつか博物館で見つけたことがある.
 
-[:embed](https://www.pinterest.jp/pin/1144125480307894674/)
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480307894674" height="257" width="345" frameborder="0" scrolling="no" ></iframe>
 
 開発者はこれを元にしたとは明言していないが, ボローニャ流で最も有名な剣術家 Achille Marozzo の "Opera Nova" (16世紀前半の作) 2巻の片手剣の挿絵は確かに Kalkstein の姿勢とよく似ている.
 
-[:embed](https://www.pinterest.jp/pin/1144125480309841680/)
-[:embed](https://www.pinterest.jp/pin/1144125480309841676/)
-[:embed](https://www.pinterest.jp/pin/1144125480309841674/)
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480309841680" height="477" width="345" frameborder="0" scrolling="no" ></iframe>
+
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480309841676" height="477" width="345" frameborder="0" scrolling="no" ></iframe>
+
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480309841674" height="477" width="345" frameborder="0" scrolling="no" ></iframe>
 
 キャラクターの設定ははっきりしていない. ヴェネツィアやユーゴスラヴィアで使われたスキアヴォーナを使用する, ドイツ語風の名前, イタリア式の戦い方, といった特徴から, オーストリアあたりの出身かもしれないと勝手に想像している.

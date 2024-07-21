@@ -1,4 +1,10 @@
-## ヨンドレク/Jędrek {#Jedrek}
+## ヨンドレク/Jędrek {#sec-Jedrek}
+
+```{r}
+source(here::here("script/common.R"))
+```
+
+### 概要 {-}
 
 2023.04.19 で追加された斧使いである. 名前が表示箇所によって, Jędrek だったり Yendrek だったりして統一されていない. 本稿では Jędrek に準拠した表記にしている.
 
@@ -8,12 +14,16 @@
 
 マルタに引き続き, 固有BGM, というか固有テーマソングがあるという, 謎の優遇を受けている.
 
-[:embed](https://www.youtube.com/watch?v=LDldf2DGBas)
+{{< video https://www.youtube.com/watch?v=LDldf2DGBas >}}
 
-```{r yenderek}
+### コマンド {-}
+
+```{r jedrek}
+#| label: jedrek
+
 bind_rows(
-  map_df(list.files("commands/", pattern = "yenderek", full.names = T), read_csv)
-  ) %>% bind_rows(read_csv("commands/misc_common.csv")) %>%
+  map_df(list.files(here::here("commands/"), pattern = "jedrek", full.names = T), read_csv)
+  ) %>% bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
   to_table(lr = F) %>%
   as_html_table
 ```
@@ -22,10 +32,10 @@ bind_rows(
 
 彼の使うような, 柄が長く刃の小さい斧全般のことをシェファードアクス (Shephard’s Axe) といい, 東ヨーロッパの山岳地帯で広く使われているらしい. ポーランド語ではciupaga/ツィウパガという. シェファードアクスは名前通り, カルパティア山脈周辺では羊飼いが使用していたことからついた名称であり, このような形状の斧を携えた羊飼いの描かれた絵がいくらか残っている. 衣装と名前はポーランド風であり, アーケードモードでもポーランドの山岳地帯の出身という設定が明かされている. なのでおそらくポーランド南部のタトラ・カルパティア山脈周辺に住むグラレ族の出身という設定なのだろう. ツィウパガは日用品や武器としてだけでなく, 彼らの伝統舞踊の小道具にも使われるらしい. 例えばこれを見るとスクワット攻撃などとよく似た動きをしている.
 
-[:embed](https://www.youtube.com/watch?v=U0oKXDQzleY)
+{{< video https://www.youtube.com/watch?v=U0oKXDQzleY >}}
 
 一方で, シェファードアックスの武術に関する文献はあまりない. 私の知っているのは以前紹介した19世紀末のハンガリーの軍事教練に関するfokosの英語文献だけである (fokosというのはシェファードアクスのハンガリー語での呼び方である). 東ヨーロッパでは羊飼いの斧だが,中央アジアの遊牧民もまた同様の形状の斧を使っていたという記録があるようだ. 19世紀でも騎兵の武器として取り入れられているのも関連があるのかもしれない. 以上から, ヨンドレクの動きの一部は上記のようなダンスから取り入れたもので, それ以外はここを参考にしたのではないかと思う.
 
-[:embed](https://www.youtube.com/watch?v=_E7V9Hp0ZxY)
+{{< video https://www.youtube.com/watch?v=_E7V9Hp0ZxY >}}
 
 現地の人に, ポーランドで斧術の古い資料は残っているかと訊いた. 「残念ながら知らない. ちなみに(上記の)ハンガリーの教本書いた人とはこのまえプラハで合同で講習会を開いたよ」とのこと.
