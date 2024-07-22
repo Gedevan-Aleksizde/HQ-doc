@@ -1,24 +1,21 @@
 project:
-  type: website
-  output-dir: docs
-#  render:
-#    - "index.qmd"
-#    - "content/JP"
+    type: website
+    output-dir: docs
 lang: ja
 toc: true
 format:
-  html:
-    css: syle.css
-    html-math-method: katex
+    html:
+        css: syle.css
+        html-math-method: katex
 metadata-files:
-  - _website.yml
+    - _website.yml
 resources:
-  - "img/*"
+    - "img/*"
 execute:
     message: false
     echo: false
     warning: false
     output: "asis"
-    include: false
+    keep-md: true
 params:
-  gamever: 2024.07.07.0
+    gamever: 2024.07.07.0

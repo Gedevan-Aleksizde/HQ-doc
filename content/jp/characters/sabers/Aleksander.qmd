@@ -22,6 +22,7 @@ source(here::here("script/common.R"))
 
 ```{r}
 #| label: alex
+#| results: asis
 
 map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), read_csv) %>%
   bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%

@@ -75,7 +75,7 @@ replace_keys <- function(text){
     map(~tibble(str = if(length(.x[, 1]) == 0) "" else .x[, 1]) %>% mutate(
       is_key = str_detect(str, "\\[([TYGHRLUD\\+]+?)\\]"),
       str = if_else(is_key,
-                    str_replace_all(str, "\\[([TYGHUDLR\\+]+?)\\]", "img/\\1.svg") %>%
+                    str_replace_all(str, "\\[([TYGHUDLR\\+]+?)\\]", "/img/\\1.svg") %>%
                       # str_replace_all(str, "\\[([TYGHUDLR\\+]+?)\\]", "key-\\1") %>%
                       sapply(reuse_svg) %>%
                       unlist,

@@ -8,16 +8,8 @@ source(here::here("script/common.R"))
 
 ### 概要 {-}
 
-![左ロングガード姿勢のタルナフスキ](img/Tarnawski.jpg){#fig-tarnawski}
+![左ロングガード姿勢のタルナフスキ](/img/Tarnawski.jpg){#fig-tarnawski}
 
-```{r}
-#| fig-cap: "左ロングガード姿勢のタルナフスキ (v2024.07.09.0)"
-#| fig-aling: "center"
-#| output: true
-#| eval: true
-
-knitr::include_graphics(here::here("img/Tarnawski.jpg"))
-```
 
 v2024.04.10から登場した. 名前の表記に揺らぎが多い. Tarnavskiの他に, Tarnavsky, Tarnawski になっている箇所もある. 最後の表記が最もポーランド語風である. だがタルナフスキは姓なので, 個人名ではなさそうだ.
 

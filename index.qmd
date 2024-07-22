@@ -26,6 +26,8 @@ Hellish Quart は現在アーリーアクセス状態です. 仕様が頻繁に�
 
 :::
 
+{{< video https://www.youtube.com/watch?v=tE0IZ4Yw96w >}}
+
 Steam アーリーアクセス版が発売中のインディーズ対戦ゲーム [Hellish Quart](https://store.steampowered.com/app/1000360/Hellish_Quart/?l=japanese)を私はまだ全然遊べていないが, かなりコアなゲームなので解説をしてみる. そもそも公式にも技コマンド表とかが充実してない 
 (3月から全キャラ公開された) ので, 戦術の研究の一助になれば幸いである.
 
