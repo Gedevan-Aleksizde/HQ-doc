@@ -8,7 +8,7 @@ monofont: "Ricty"
 link-citations: true
 fontsize: 12pt
 params:
-  gamever: 2024.07.07.0  # TODO: こっちに書かないと動かないの本末転倒
+  gamever: 2024.07.09.0  # TODO: こっちに書かないと動かないの本末転倒
 ---
 
 
@@ -16,7 +16,7 @@ params:
 
 :::{.callout-warning}
 
-Hellish Quart は現在アーリーアクセス状態です. 仕様が頻繁に変更されることに注意してください. このドキュメントは **`r params$gamever`** 準拠のものです.
+Hellish Quart は現在アーリーアクセス状態です. 仕様が頻繁に変更されることに注意してください. このドキュメントは `{r} params$gamever` 準拠のものです.
 
 :::
 
@@ -30,12 +30,3 @@ Hellish Quart は現在アーリーアクセス状態です. 仕様が頻繁に�
 
 Steam アーリーアクセス版が発売中のインディーズ対戦ゲーム [Hellish Quart](https://store.steampowered.com/app/1000360/Hellish_Quart/?l=japanese)を私はまだ全然遊べていないが, かなりコアなゲームなので解説をしてみる. そもそも公式にも技コマンド表とかが充実してない 
 (3月から全キャラ公開された) ので, 戦術の研究の一助になれば幸いである.
-
-
-```{r}
-#| output: "asis"
-#| echo: FALSE
-
-# なんで勝手にpタグ混入するの?
-cat(readLines(here::here("img/buttons.svg")), sep = "\n")
-```

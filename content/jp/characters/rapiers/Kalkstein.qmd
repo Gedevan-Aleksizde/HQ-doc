@@ -10,12 +10,17 @@ source(here::here("script/common.R"))
 
 2021.06.23のアップデートで追加された, スキアヴォーナを使用するキャラクターである. 出自に関する詳しい設定は明かされていない^[開発中の画面では Johannes という名前で映っている. <https://www.youtube.com/watch?v=6zRdjB8s41M>]が, 本稿ではドイツ語風に「カルクシュタイン」表記にしている. 
 
-「彼の剣は重いため, 彼は力を入れる必要もなく, 素早く振ることもない」という設定のキャラクターらしい. ダメージは高めに設定されているようだが, 大ぶりでゆっくりした攻撃が多く, 足も遅いので間合いを取るのが難しいかもしれない. その一方でコンボの2撃目が突きに変化することが多いので, 一撃目を囮にして二撃目を当てる, という使い方ができるだろう. また, ゲデオンやイザベラのように足の向きでコマンドが変化する. デフォルトは右前で, 切替方法はこの2名とさらに異なり, **斜め移動**で左右の構えを切り替える. また, 一部の攻撃動作でも右前に切り替わるものがある.
+### 特性 {-}
 
+いちおうレイピアに分類したが, ゲーム内ではサーベルともレイピアとも異なる特性を持ったキャラクターである. 「彼の剣は重いため, 彼は力を入れる必要もなく, 素早く振ることもない」という設定のキャラクターらしい. 大ぶりでゆっくりした攻撃が多い. 斬撃は威力が高く, 剣の重さのためか押し勝ちやすいが, 足が遅いこともあり当てるのが難しいかもしれない. その一方でコンボの2撃目が突きに変化することが多いので, 一撃目を囮にして二撃目を当てる, という使い方ができるだろう. また, [ゲデオン](../sabers/Gedeon.qmd#sec-Gedeon)や[イザベラ](../longswords/Isabella.qmd#sec-Isabella)のように足の向きでコマンドが変化する. デフォルトは右前で, 切替方法はこの2名とさらに異なり, **斜め移動**するか, 一部の攻撃動作で右前に切り替える.
 
-自動防御は隙が少ないので, 積極的に使うと良い. 一方で, 攻撃も移動も遅いので間合いは依然として重要である.
+自動防御は隙が少なく弾かれにくいので, 積極的に使うと良い. ただし, 自動防御は足元を守りきれないことがある. そして攻撃も移動も遅いので, 間合いは依然として重要である.
 
 ### コマンド {-}
+
+:::{.panel-tabset}
+
+#### XBox
 
 ```{r}
 #| label: kalkstein
@@ -26,13 +31,39 @@ map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T
   as_html_table
 ```
 
+#### キーボード
+
+```{r}
+#| label: kalkstein-key
+#| results: asis
+
+map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table(lr = T, dir = "../../../../img/key") %>%
+  as_html_table
+```
+
+#### PS
+
+```{r}
+#| label: kalkstein-ps
+#| results: asis
+
+map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table(lr = T, dir = "../../../../img/ps") %>%
+  as_html_table
+```
+
+:::
+
 ### 歴史的背景 {-}
 
 開発者は当初ボローニャ流にしようとしたが, 練習用に用意した剣が重かったので重い剣を活かしたアレンジを入れることを思いついたらしい. バスケットヒルトソードはスコットランドやスイスなどいろいろな地域・時代に見られ, 私はあまり見分けられる自信がないが, 作者の動画によればスキアヴォーナ (Schiavona) というタイプの剣だと言っている. これはルネッサンス-18cにヴェネツィア周辺で流行した剣である.^[参考: 三浦權利『西洋甲冑武器事典』柏書房), H. J. S. Withers "The Sword Encyclopedia of Swords and Sabers,"  Hermes House]. そっくりな形状の剣はポーランドの博物館にもあるようだ. 私もポーランド国内のいくつか博物館で見つけたことがある.
 
 <iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480307894674" height="257" width="345" frameborder="0" scrolling="no" ></iframe>
 
-開発者はこれを元にしたとは明言していないが, ボローニャ流で最も有名な剣術家 Achille Marozzo の "Opera Nova" (16世紀前半の作) 2巻の片手剣の挿絵は確かに Kalkstein の姿勢とよく似ている.
+開発者はこれを元にしたとは明言していないが, ボローニャ流で最も有名な剣術家マロッツォ (Achille Marozzo) の16世紀前半のマニュアル "Opera Nova" の2巻の片手剣の挿絵は確かにカルクシュタインの姿勢とよく似ている.
 
 <iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480309841680" height="477" width="345" frameborder="0" scrolling="no" ></iframe>
 

@@ -10,9 +10,11 @@ source(here::here("script/common.R"))
 
 パッチ 2021.10.29 のアップデートで追加された 2人目の長剣使いである. Zera と Żera の2通りの表記があり, 統一されていない. 本稿では後者に則して「ジェラ神父」と表記している.
 
-錯乱し, 足取りのおぼつかない長剣使いの神父である. ただのアル中だと思われたが, 追加されたアーケードモードのテキストからは重い妄想症を患っていることが示唆される.
+錯乱し, 足取りのおぼつかない長剣使いの自称神父である. ただのアル中だと思われたが, 追加されたアーケードモードのテキストから, 自分が十字軍の生き残りだという妄想に囚われている危険人物であることが示唆されている. (言うまでもなく, 十字軍は数世紀前の出来事である)
 
-イザベラ同様対角線上の攻撃に合わせて左右の足が切り替わり, コマンドも変化する. また, 全体的に酔拳みたいなフラフラした姿勢である. しかし一方で剣の軌道はそこまで変則的ではなく, 多くの動きは古いドイツの長剣術に則している. 構えの種類が多く, ロングガード以外にも,
+### 特性 {-}
+
+イザベラよりもコマンドを覚えやすく, 比較的シンプルで使いやすい長剣使いである. [イザベラ](Isabella.qmd#sec-Isabella)同様対角線上の攻撃に合わせて左右の足が切り替わり, コマンドも変化する. また, 全体的に酔拳みたいなフラフラした姿勢である. しかし一方で剣の軌道はそこまで変則的ではなく, 多くの動きは古いドイツの長剣術に則している. 構えの種類が多く, ロングガード以外にも,
 
 * 剣を頭上で垂直に突き上げる『聖なる』構え
 * 剣を肩で担ぐような『屋根』の構え
@@ -20,12 +22,16 @@ source(here::here("script/common.R"))
 
 の3つの構えを持つ. しかし現時点ではこれらの構え時の特殊なコマンドはほぼ1つづつしかないし, あまり利点のある技とも思えないので, 使う機会は限られるだろう.
 
-一見使いにくいキャラクターに見えるかもしれないが, 太刀筋はイザベラより素直で覚えやすいため, イザベラよりも使いやすいと思う. 特に, 右に踏み込みながらの払い攻撃は出しやすい割に多くのキャラクターの自動防御を貫通するので便利である. 一方で, 突き攻撃が少なく, なおかつ隙の大きな別の攻撃コマンドが暴発しやすいという弱点がある. 
+一見使いにくいキャラクターに見えるかもしれないが, 太刀筋はイザベラより素直で覚えやすいため, イザベラよりも使いやすいと思う. 特に, 右に踏み込みながらの払い攻撃は出しやすい割に多くのキャラクターの自動防御をすり抜けやすいので便利である. 一方で, 突き攻撃が少なく, なおかつ隙の大きな別の攻撃コマンドが暴発しやすいという弱点がある.
 
 ### コマンド {-}
 
+:::{.panel-tabset}
+
+#### XBox
+
 ```{r}
-#| label: zera
+#| label: zera-xbox
 
 bind_rows(
   map_df(list.files(here::here("commands/"), pattern = "zera", full.names = T), read_csv)
@@ -34,6 +40,32 @@ bind_rows(
   to_table(lr = T) %>%
   as_html_table
 ```
+
+#### キーボード
+
+```{r}
+#| label: zera-key
+#| results: asis
+
+map_df(list.files(here::here("commands/"), pattern = "zera", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table(lr = T, dir = "../../../../img/key") %>%
+  as_html_table
+```
+
+#### PS
+
+```{r}
+#| label: zera-ps
+#| results: asis
+
+map_df(list.files(here::here("commands/"), pattern = "zera", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table(lr = T, dir = "../../../../img/ps") %>%
+  as_html_table
+```
+
+:::
 
 ### 歴史的背景 {-}
 
@@ -44,3 +76,5 @@ bind_rows(
 掴み技の動きが Durchlauchen と似ている.
 
 <iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480329741581" height="591" width="345" frameborder="0" scrolling="no" ></iframe>
+
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480329741607" height="488" width="345" frameborder="0" scrolling="no" ></iframe>

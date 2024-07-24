@@ -8,20 +8,24 @@ source(here::here("script/common.R"))
 
 {{< video https://www.youtube.com/watch?v=Mp85Y_NKcNs >}}
 
-2022.04.09.0で追加された. Alexander だったり Aleksander だったり表記が統一されていない. Aleksander Denis という実在の人物をモチーフにしているため, ここでは Aleksander 表記にした.
+2022.04.09.0で追加された. Alexander だったり Aleksander だったり表記が統一されていない. Aleksander Denis という実在の人物をモチーフにしているため, ここでは Aleksander 表記にした. 以前は, 左右でコマンドが変化していたが, 2023.05.04の更新で廃止され左右共通となった.
 
-前腕だけを使った速いカットが多いが, 実は剣がやや短い?^[練習モードだと棒を持つ位置を詰めているのではっきりとわかる]. 待機状態でも常に左右の足を動かし差し替えている. 素早く威力の高い斬撃が特徴だが, 剣が小さいためか, 大きく体を振る動作が多いためか, あるいはその両方か, 一部の攻撃で自動防御に失敗しやすい気がする. 当時のヨーロッパ側の文献は, 中東の兵士は剣で打ち合うことをせず, 間合いを取って回避するスタイルだったと書いているらしいので, アレクサンデルについても, 左右のステップに同期して移動キーを押して素早く動くことで, 似たような動きができるかもしれない 
+### 特性 {-}
 
-以前は, 左右でコマンドが変化していたが, 2023.05.04の更新で廃止され左右共通となった.
+強みと弱みが極端なキャラクターで, 特性を把握することで強キャラになれるだろう. 剣がやや短い^[練習モードだと棒を持つ位置を詰めているのではっきりとわかる]. 小型のサーベルによる, 前腕だけを使った軽やかな斬撃が多いが, 威力は高い. 刀身が幅広く末広がりなので, 重心が先端近くにあるのだろう. 待機状態でも常に左右の足を動かし差し替えている. 
+
+大きな弱点がいくつかある. 上段攻撃に対しての自動防御は優れているが, 腹部や脚部はあまり守れてない. 加えて, 大きく体を振る動作が多いため, ステップ移動時に大きな隙ができる. なお, 常時動いている代償なのか, 歩行速度がけっこう遅い. ロングガードもとても弱い. ただでさえ短い剣をあまり突き出さないため, 普通に攻撃が届いてしまう. 攻撃も, リーチが短くぎこちない突きなど, 使いにくいものが多い.
+
+当時のヨーロッパ側の文献は, 中東の兵士は剣で打ち合うことをせず, 間合いを取って回避するスタイルだったと書いているらしいので, アレクサンデルについても, 左右のステップに同期して移動キーを押して素早く動くことで, 似たような動きができるかもしれない.
 
 ### コマンド
 
 :::{.panel-tabset}
 
-#### ゲームパッド
+#### XBox
 
 ```{r}
-#| label: alex
+#| label: alex-xbox
 #| results: asis
 
 map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), read_csv) %>%
@@ -30,11 +34,30 @@ map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), re
   as_html_table
 ```
 
-test
-
 #### キーボード
 
-test2
+```{r}
+#| label: alex-key
+#| results: asis
+
+map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table(dir = "../../../../img/key") %>%
+  as_html_table
+```
+
+#### PS
+
+```{r}
+#| label: alex-ps
+#| results: asis
+
+map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table(dir = "../../../../img/ps") %>%
+  as_html_table
+```
+
 
 :::
 
