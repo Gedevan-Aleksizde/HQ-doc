@@ -1,3 +1,10 @@
+date: now
+date-modified: last-modified
+date-format: "YYYY-MM-DDTHH:mm:ss zzz"
+booklanguage: ja
+monofont: "Ricty"
+link-citations: true
+fontsize: 12pt
 project:
     type: website
     output-dir: docs
@@ -5,8 +12,11 @@ lang: ja
 toc: true
 format:
     html:
-        css: css/styles.css
+        css: 
+            - css/gt.css
         html-math-method: katex
+        include-in-header:
+            - svgsnippet.html
 metadata-files:
     - _website.yml
 resources:
@@ -19,3 +29,4 @@ execute:
     output: "asis"
 params:
     gamever: 2024.07.09.0
+license: "CC BY-SA"

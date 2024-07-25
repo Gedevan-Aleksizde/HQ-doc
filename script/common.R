@@ -2,6 +2,7 @@ require(tidyverse)
 require(gt)
 
 MODE_LEVELS <- c("normal", "long", "low", "high", "iron", "donna", "boartusk", "holy", "roof", "fool", "misc")
+BLANK_SYMBOL <- "-"
 
 d <- data.frame(
   icon_num = factor(1:4, levels = 1:5),
@@ -102,21 +103,8 @@ reuse_svg <- function(id){
 
 replace_keys <- function(text, dir = "../../../../img/xbox"){
   pat <- "\\[([TYGHRLUD]+?)\\]"
-  text %>% str_remove_all("\\s") %>%
-    str_match_all(pat) %>%
-    map(
-      ~tibble(str = if(length(.x[, 1]) == 0) "" else .x[, 1]) %>%
-        mutate(
-          is_key = str_detect(str, pat),
-          str = if_else(
-            is_key,
-            str_replace_all(str, pat, file.path(dir, "\\1.svg")) %>%
-            sapply(reuse_svg) %>% unlist,
-            str
-          )
-      )
-    ) %>%
-    map_chr(~paste(.x$str, collapse = ", ") %>% str_remove("^,\\s"))
+  text %>% str_replace_all("\\s+", " ") %>%
+    str_replace_all(pat, reuse_svg(file.path(dir, "\\1.svg")))
 }
 
 to_table <- function(d, is_lr = F, dir = "../../../../img/xbox"){
@@ -137,7 +125,7 @@ to_table <- function(d, is_lr = F, dir = "../../../../img/xbox"){
       common = is.na(lr),
       lr = if_else(common, "l", lr)) %>%
       pivot_wider(id_cols = c(mode, name, common), names_from = lr, values_from = command) %>%
-      mutate(l = if_else(is.na(l), "x", l), r = if_else(common, "", if_else(is.na(r), "x", r))) %>%
+      mutate(l = if_else(is.na(l), BLANK_SYMBOL, l), r = if_else(common, "", if_else(is.na(r), BLANK_SYMBOL, r))) %>%
       dplyr::select(-common) %>% mutate(across(c(l, r), replace_keys, dir = dir))
   } else{
     t <- dplyr::select(t, -one_of("lr")) %>% mutate(command = replace_keys(command, dir = dir))

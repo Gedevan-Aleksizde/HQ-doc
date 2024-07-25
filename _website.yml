@@ -2,6 +2,7 @@ website:
     title: "Hellish Quart 日本語情報"
     repo-url: https://github.com/Gedevan-Aleksizde/HQ-doc
     repo-actions: [edit, issue]
+    bread-crumbs: true
     sidebar:
         collapse-level: 3
         style: docked
@@ -26,6 +27,3 @@ website:
                   - section:
                     href: content/jp/extras.qmd
                     contents: content/jp/characters/extras/*
-    navbar:
-        right:
-            - text: "最終更新: {{< meta date >}}"

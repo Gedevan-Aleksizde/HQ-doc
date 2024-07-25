@@ -1,17 +1,8 @@
 ---
+site: bookdown::bookdown_site
 title: "Hellish Quart 日本語情報"
 author: "under-identified"
-date: now
-date-modified: last-modified
-date-format: "YYYY-MM-DDTHH:mm:ss zzz"
 description: "Hellish Quart 日本語情報"
-site: bookdown::bookdown_site
-booklanguage: ja
-monofont: "Ricty"
-link-citations: true
-fontsize: 12pt
-params:
-  gamever: 2024.07.09.0  # TODO: こっちに書かないと動かないの本末転倒
 ---
 
 
@@ -19,13 +10,13 @@ params:
 
 :::{.callout-warning}
 
-Hellish Quart は現在, アーリーアクセスの段階です. 仕様が頻繁に変更される可能性に注意してください. このドキュメントは `{r} params$gamever` 準拠のものです.
+Hellish Quart は現在, アーリーアクセスの段階です. 仕様が頻繁に変更される可能性に注意してください. このドキュメントは `r params$gamever` 準拠のものです.
 
 :::
 
 :::{.callout-note}
 
-このサイトのコンテンツを [クリエイティブコモンズ表示4.0国際ライセンス](https://creativecommons.org/licenses/by/4.0/deed.ja) で公開します. ライセンスと著作権の許容する範囲で自由にお使いください. 掲載されている一部の画像や動画には, 個別に著作権やライセンスが指定されている場合があります.
+このサイトのコンテンツを [クリエイティブコモンズ表示-継承 4.0 国際ライセンス](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) で公開します. ライセンスと著作権の許容する範囲で自由にお使いください. 掲載されている一部の画像や動画には, 個別に著作権やライセンスが指定されている場合があります.
 
 編集を提案することもできます. 採用された提案内容も上記のライセンスが適用されます.
 

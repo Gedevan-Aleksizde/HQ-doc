@@ -17,7 +17,7 @@ source(here::here("script/common.R"))
 
 ### 攻撃
 
-攻撃操作も鉄拳と似ている. デフォルトでは, `r reuse_svg(file.path("../../../../img/key", "TYGH.svg"))` を使用する. ゲームパッドなら, XBOX, PS でそれぞれ `r reuse_svg(file.path("../../../../img/xbox", "TYGH.svg"))` `r reuse_svg(file.path("../../../../img/ps", "TYGH.svg"))` に対応する. 4つのボタンは四方向からの攻撃におおむね対応している. `r reuse_svg(file.path("../../../../img/xbox", c("T.svg", "Y.svg")))` は左右の斬り下ろし攻撃で, `r reuse_svg(file.path("../../../../img/xbox", c("G.svg", "H.svg")))` は左右の斬り上げまたは下段攻撃になり, キーボードのデフォルト設定も隣接する4つのキー `r knitr::asis_output(paste(readLines(here::here("img/4keys.svg")), collapse=""))` がこれに対応する. ほとんどの基本攻撃は対角線を描くようになされる.
+攻撃操作も鉄拳と似ている. デフォルトでは, `r reuse_svg(file.path("../../../img/key", "TYGH.svg"))` を使用する. ゲームパッドなら, XBOX, PS でそれぞれ `r reuse_svg(file.path("../../../img/xbox", "TYGH.svg"))` `r reuse_svg(file.path("../../../img/ps", "TYGH.svg"))` に対応する. 4つのボタンは四方向からの攻撃におおむね対応している. `r reuse_svg(file.path("../../../img/xbox", c("T.svg", "Y.svg")))` は左右の斬り下ろし攻撃で, `r reuse_svg(file.path("../../../img/xbox", c("G.svg", "H.svg")))` は左右の斬り上げまたは下段攻撃になり, キーボードのデフォルト設定も隣接する4つのキー `r knitr::asis_output(paste(readLines(here::here("img/4keys.svg")), collapse=""))` がこれに対応する. ほとんどの基本攻撃は対角線を描くようになされる.
 
 ![基本攻撃 (Meyer 風の表現)](/img/square.png)
 
