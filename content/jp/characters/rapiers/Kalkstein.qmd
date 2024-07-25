@@ -14,22 +14,11 @@ source(here::here("script/common.R"))
 
 いちおうレイピアに分類したが, ゲーム内ではサーベルともレイピアとも異なる特性を持ったキャラクターである. 「彼の剣は重いため, 彼は力を入れる必要もなく, 素早く振ることもない」という設定のキャラクターらしい. 大ぶりでゆっくりした攻撃が多い. 斬撃は威力が高く, 剣の重さのためか押し勝ちやすいが, 足が遅いこともあり当てるのが難しいかもしれない. その一方でコンボの2撃目が突きに変化することが多いので, 一撃目を囮にして二撃目を当てる, という使い方ができるだろう. また, [ゲデオン](../sabers/Gedeon.qmd#sec-Gedeon)や[イザベラ](../longswords/Isabella.qmd#sec-Isabella)のように足の向きでコマンドが変化する. デフォルトは右前で, 切替方法はこの2名とさらに異なり, **斜め移動**するか, 一部の攻撃動作で右前に切り替える.
 
-自動防御は隙が少なく弾かれにくいので, 積極的に使うと良い. ただし, 自動防御は足元を守りきれないことがある. そして攻撃も移動も遅いので, 間合いは依然として重要である.
+自動防御は隙が少なく弾かれにくいので, 積極的に使うと良い. ただし, 足元の守りにいくらか隙がある. そして攻撃も移動も遅いので, 間合いは依然として重要である.
 
 ### コマンド {-}
 
 :::{.panel-tabset}
-
-#### XBox
-
-```{r}
-#| label: kalkstein
-
-map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(lr = T) %>%
-  as_html_table
-```
 
 #### キーボード
 
@@ -39,7 +28,18 @@ map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T
 
 map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T), read_csv) %>%
   bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(lr = T, dir = "../../../../img/key") %>%
+  to_table(is_lr = T, dir = "../../../../img/key") %>%
+  as_html_table
+```
+
+#### XBox
+
+```{r}
+#| label: kalkstein
+
+map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table(is_lr = T) %>%
   as_html_table
 ```
 
@@ -51,7 +51,7 @@ map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T
 
 map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T), read_csv) %>%
   bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(lr = T, dir = "../../../../img/ps") %>%
+  to_table(is_lr = T, dir = "../../../../img/ps") %>%
   as_html_table
 ```
 

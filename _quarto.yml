@@ -5,7 +5,7 @@ lang: ja
 toc: true
 format:
     html:
-        css: syle.css
+        css: css/styles.css
         html-math-method: katex
 metadata-files:
     - _website.yml
@@ -17,6 +17,5 @@ execute:
     echo: false
     warning: false
     output: "asis"
-    keep-md: true
 params:
     gamever: 2024.07.09.0

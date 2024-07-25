@@ -1,6 +1,8 @@
 require(tidyverse)
 require(gt)
 
+MODE_LEVELS <- c("normal", "long", "low", "high", "iron", "donna", "boartusk", "holy", "roof", "fool", "misc")
+
 d <- data.frame(
   icon_num = factor(1:4, levels = 1:5),
   xbox = c("X", "Y", "A", "B"),
@@ -63,8 +65,8 @@ make_buttons_svg <- function(buttons, type = "xbox", dev = svglite::svglite, sav
   }
   g <- g +
     coord_fixed(xlim = c(-1, 1)/ (150 * .pt), ylim = c(-1, 1)/(150 * .pt)) +
-    scale_fill_manual(guide = F, breaks = factor(1:5), values = c("blue", "yellow", "green", "red", "grey")) +
-    scale_color_manual(guide = F, breaks = factor(1:5), values = c("blue", "yellow", "green", "red", "grey")) +
+    scale_fill_manual(guide = F, breaks = factor(1:5), values = c("blue", "yellow", "green", "orange", "grey")) +
+    scale_color_manual(guide = F, breaks = factor(1:5), values = c("blue", "yellow", "green", "orange", "grey")) +
     theme_void(base_family = "Noto Sans CJK JP")
   if(save){
     ggsave(plot = g, device = dev, path = dir, filename = name, width = 1, height = 1, scale = .5)
@@ -95,31 +97,42 @@ make_direct_buttons <- function(
 }
 
 reuse_svg <- function(id){
-  sprintf('<img height=40 width=40 src="%s" />', id)
+  sprintf("<img height=40 width=40 src='%s' />", id)
 }
 
 replace_keys <- function(text, dir = "../../../../img/xbox"){
+  pat <- "\\[([TYGHRLUD]+?)\\]"
   text %>% str_remove_all("\\s") %>%
-    str_match_all("\\[([TYGHRLUD]+?)\\]|[^\\[([TYGHRLUD]+?)\\]]+") %>%
-    map(~tibble(str = if(length(.x[, 1]) == 0) "" else .x[, 1]) %>% mutate(
-      is_key = str_detect(str, "\\[([TYGHRLUD]+?)\\]"),
-      str = if_else(is_key,
-                    str_replace_all(str, "\\[([TYGHUDLR]+?)\\]", file.path(dir, "\\1.svg")) %>%
-                      # str_replace_all(str, "\\[([TYGHUDLR\\+]+?)\\]", "key-\\1") %>%
-                      sapply(reuse_svg) %>%
-                      unlist,
-                    str),
-    )
-    ) %>% map_chr(~paste(.x$str, collapse = ", ") %>% str_remove("^,\\s"))
+    str_match_all(pat) %>%
+    map(
+      ~tibble(str = if(length(.x[, 1]) == 0) "" else .x[, 1]) %>%
+        mutate(
+          is_key = str_detect(str, pat),
+          str = if_else(
+            is_key,
+            str_replace_all(str, pat, file.path(dir, "\\1.svg")) %>%
+            sapply(reuse_svg) %>% unlist,
+            str
+          )
+      )
+    ) %>%
+    map_chr(~paste(.x$str, collapse = ", ") %>% str_remove("^,\\s"))
 }
 
-to_table <- function(d, lr = F, dir = "../../../../img/xbox"){
+to_table <- function(d, is_lr = F, dir = "../../../../img/xbox"){
   t <- d %>% mutate(
     name = paste(name_orig, paste0("<br>(", name, ")")),
-    mode = factor(mode, levels = c("normal", "long", "low", "high", "iron", "donna", "boartusk", "holy", "roof", "fool", "misc"))
+    mode = factor(mode, levels = MODE_LEVELS)
   ) %>%
     dplyr::select(-name_orig)
-  if(lr){
+  is_lr <- if(is.na(is_lr)) F else is_lr
+  if(is_lr){
+    t_bothsides <- t %>% filter(is.na(lr) | lr== "lr")
+    t <- bind_rows(
+      t %>% filter(!(is.na(lr) | lr== "lr")),
+      t_bothsides %>% mutate(lr = "l"),
+      t_bothsides %>% mutate(lr = "r")
+    )
     t <- t %>% mutate(
       common = is.na(lr),
       lr = if_else(common, "l", lr)) %>%
@@ -130,9 +143,9 @@ to_table <- function(d, lr = F, dir = "../../../../img/xbox"){
     t <- dplyr::select(t, -one_of("lr")) %>% mutate(command = replace_keys(command, dir = dir))
   }
   t <- t %>% arrange(mode) %>% group_by(mode) %>% gt()
-  # HTMLをエスケープする方法として tab_row_group を使うものがあるが, rownames が表示されたままになる
-  # 存在しないグループを指定するとエラー
-  # よって内部データを改ざんするしかない
+  # TODO: HTMLをエスケープする方法として tab_row_group を使うものがあるが, rownames が表示されたままになる
+  # 一方で, 存在しないグループを指定するとエラーが発生する
+  # よって, HTMLタグを挿入するには内部データを改ざんするしかなさそう
   g_headings <- list(
     normal = "通常時",
     long = "ロングガード時 - スペース or LT 押しっぱなし",
@@ -172,7 +185,7 @@ to_table <- function(d, lr = F, dir = "../../../../img/xbox"){
     misc = html("共通コマンド")
   )
   t$`_stub_df`[["group_label"]] <- map(t$`_stub_df`[["group_label"]], ~html(g_headings[[.x]]))
-  if(lr){
+  if(is_lr){
     t <- t  %>%
       cols_label(name = "名称", l = "左足が前", r = "右足が前") %>%
       tab_spanner("コマンド", columns = c("l", "r")) %>%
@@ -182,7 +195,14 @@ to_table <- function(d, lr = F, dir = "../../../../img/xbox"){
       fmt_markdown(columns = "command") %>%
       cols_label(name = "名称", command = "コマンド")
   }
-  t %>% fmt_markdown(columns = "name") %>% fmt_markdown(columns = "mode")
+  t %>%
+    tab_style(
+      style = list(
+        cell_text(align = "center", weight = "bold")
+      ),
+      locations = cells_stubhead()
+    ) %>%
+    fmt_markdown(columns = "name") %>% fmt_markdown(columns = "mode")
 }
 
 # gt から不要なHTMLタグを削除する

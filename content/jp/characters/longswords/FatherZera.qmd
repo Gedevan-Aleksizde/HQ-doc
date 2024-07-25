@@ -22,11 +22,23 @@ source(here::here("script/common.R"))
 
 の3つの構えを持つ. しかし現時点ではこれらの構え時の特殊なコマンドはほぼ1つづつしかないし, あまり利点のある技とも思えないので, 使う機会は限られるだろう.
 
-一見使いにくいキャラクターに見えるかもしれないが, 太刀筋はイザベラより素直で覚えやすいため, イザベラよりも使いやすいと思う. 特に, 右に踏み込みながらの払い攻撃は出しやすい割に多くのキャラクターの自動防御をすり抜けやすいので便利である. 一方で, 突き攻撃が少なく, なおかつ隙の大きな別の攻撃コマンドが暴発しやすいという弱点がある.
+一見使いにくいキャラクターに見えるかもしれないが, 太刀筋はイザベラより素直で覚えやすいため, イザベラよりも使いやすいと思う. 特に, 右に踏み込みながらの払い攻撃は出しやすい割に多くのキャラクターの自動防御に対して押し込みやすいので便利である. 一方で, 突き攻撃が少なく, なおかつ隙の大きな別の攻撃コマンドが暴発しやすいという弱点がある. 加えて, 歩行速度がやや遅く, 静止状態でもふらふら動いており, 歩行中も速度にむらが発生する. 一方で左右ステップは大きく動けるので, 回避にも回り込み攻撃にも使える.
 
 ### コマンド {-}
 
 :::{.panel-tabset}
+
+#### キーボード
+
+```{r}
+#| label: zera-key
+#| results: asis
+
+map_df(list.files(here::here("commands/"), pattern = "zera", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table(is_lr = T, dir = "../../../../img/key") %>%
+  as_html_table
+```
 
 #### XBox
 
@@ -37,19 +49,7 @@ bind_rows(
   map_df(list.files(here::here("commands/"), pattern = "zera", full.names = T), read_csv)
   ) %>%
   bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(lr = T) %>%
-  as_html_table
-```
-
-#### キーボード
-
-```{r}
-#| label: zera-key
-#| results: asis
-
-map_df(list.files(here::here("commands/"), pattern = "zera", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(lr = T, dir = "../../../../img/key") %>%
+  to_table(is_lr = T) %>%
   as_html_table
 ```
 
@@ -61,7 +61,7 @@ map_df(list.files(here::here("commands/"), pattern = "zera", full.names = T), re
 
 map_df(list.files(here::here("commands/"), pattern = "zera", full.names = T), read_csv) %>%
   bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(lr = T, dir = "../../../../img/ps") %>%
+  to_table(is_lr = T, dir = "../../../../img/ps") %>%
   as_html_table
 ```
 

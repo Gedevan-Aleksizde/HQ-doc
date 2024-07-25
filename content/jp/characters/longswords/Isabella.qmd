@@ -21,11 +21,24 @@ source(here::here("script/common.R"))
 
 v2023.12.05 現時点では, 貴婦人の構えの**本体のコマンド表のキーは間違っている**. Y ではなく X ボタンであり, なおかつ左右どちらからもできる^[https://steamcommunity.com/app/1000360/discussions/0/3419936083026348023/]. (元の文献でも左右両方の構えが書かれている) 以下の表ではこの誤記を修正した. 貴婦人の構えから派生する Heavy attack は左右どちらでもに出るのかはっきりしない.
 
-このように, コマンドがとても多い上に, 左右非対称な動きが多い. 例えば右前状態の Y は素直に力強く斬り下ろしてくれるが, X は攻撃範囲の狭い横薙ぎになってしまう. 手癖でコマンド入力すると失敗しやすい. よって, 手数が多く, 潜在的に様々な相手に対処できる能力があるが, そのぶん習得に時間がかかるだろう.
+このように, コマンドがとても多い上に, 左右非対称な動きが多い. 例えば右前状態の X は素直に大きく斬り下ろしてくれるが, Y は攻撃範囲の狭い横薙ぎになってしまう. そのため, 手癖でコマンド入力すると失敗しやすい. よって, 手数が多く, 潜在的に様々な相手に対処できる能力があるが, そのぶん習得に時間がかかる上級者向けのキャラクターだろう.
+
 
 ### コマンド表 {-}
 
 :::{.panel-tabset}
+
+#### キーボード
+
+```{r}
+#| label: isabella-key
+#| results: asis
+
+map_df(list.files(here::here("commands/"), pattern = "isabella", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table(is_lr = T, dir = "../../../../img/key") %>%
+  as_html_table
+```
 
 #### XBox
 
@@ -36,19 +49,7 @@ bind_rows(
   map_df(list.files(here::here("commands/"), pattern = "isabella", full.names = T), read_csv)
   ) %>%
   bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(lr = T) %>%
-  as_html_table
-```
-
-#### キーボード
-
-```{r}
-#| label: isabella-key
-#| results: asis
-
-map_df(list.files(here::here("commands/"), pattern = "isabella", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(lr = T, dir = "../../../../img/key") %>%
+  to_table(is_lr = T) %>%
   as_html_table
 ```
 
@@ -60,7 +61,7 @@ map_df(list.files(here::here("commands/"), pattern = "isabella", full.names = T)
 
 map_df(list.files(here::here("commands/"), pattern = "isabella", full.names = T), read_csv) %>%
   bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(lr = T, dir = "../../../../img/ps") %>%
+  to_table(is_lr = T, dir = "../../../../img/ps") %>%
   as_html_table
 ```
 

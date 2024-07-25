@@ -4,6 +4,6 @@
 
 ここに独立した記事として書いた. 現在はゲーム内にもチュートリアルがある.
 
-[:embed](https://under-identified.hatenablog.com/entry/2023/12/31/001849)
+<https://under-identified.hatenablog.com/entry/2023/12/31/001849>
 
 (そのうちこちらのサイトで再編集して掲載するかもしれない)

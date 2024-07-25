@@ -25,6 +25,6 @@
 <rect x='17.99' y='2.86' width='13.92' height='13.92' style='stroke-width: 0.71; fill: #BEBEBE;' />
 <rect x='4.08' y='19.22' width='13.92' height='13.92' style='stroke-width: 0.71; fill: #BEBEBE;' />
 <rect x='20.45' y='19.22' width='13.92' height='13.92' style='stroke-width: 0.71; fill: #BEBEBE;' />
-<text x='8.59' y='15.32' text-anchor='middle' style='font-size: 15.00px;fill: #0000FF; font-family: "Liberation Sans";' textLength='8.99px' lengthAdjust='spacingAndGlyphs'>T</text>
+<text x='8.59' y='15.18' text-anchor='middle' style='font-size: 15.00px;fill: #0000FF; font-family: "Arial";' textLength='15.00px' lengthAdjust='spacingAndGlyphs'>T</text>
 </g>
 </svg>

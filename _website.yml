@@ -27,8 +27,5 @@ website:
                     href: content/jp/extras.qmd
                     contents: content/jp/characters/extras/*
     navbar:
-        left:
-            - text: "Top"
-              href: "index.qmd"
         right:
-            - text: "最終更新: {{< modified >}}"
+            - text: "最終更新: {{< meta date >}}"

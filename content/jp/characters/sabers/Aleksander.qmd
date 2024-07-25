@@ -12,15 +12,27 @@ source(here::here("script/common.R"))
 
 ### 特性 {-}
 
-強みと弱みが極端なキャラクターで, 特性を把握することで強キャラになれるだろう. 剣がやや短い^[練習モードだと棒を持つ位置を詰めているのではっきりとわかる]. 小型のサーベルによる, 前腕だけを使った軽やかな斬撃が多いが, 威力は高い. 刀身が幅広く末広がりなので, 重心が先端近くにあるのだろう. 待機状態でも常に左右の足を動かし差し替えている. 
+強みと弱みが極端なキャラクターで, 特性を把握することで強キャラになれるだろう. 剣がやや短い^[練習モードだと棒を持つ位置を詰めているのではっきりとわかる]. 小型のサーベルによる, 前腕だけを使った軽やかな斬撃が多いが, 威力は高い. 刀身が幅広く末広がりなので, 重心が先端近くにあるのだろう. 待機状態でも常に足踏みをして左右の足の前後を切り替えている. 歩行速度は速いが, 独特の足踏みのため, 同じ方向に移動し続けようとすると, 一定間隔で立ち止まってしまう. 前進後退ではなく, 足踏みのタイミングに合わせてジグザクに移動すると良いかもしれない.
 
-大きな弱点がいくつかある. 上段攻撃に対しての自動防御は優れているが, 腹部や脚部はあまり守れてない. 加えて, 大きく体を振る動作が多いため, ステップ移動時に大きな隙ができる. なお, 常時動いている代償なのか, 歩行速度がけっこう遅い. ロングガードもとても弱い. ただでさえ短い剣をあまり突き出さないため, 普通に攻撃が届いてしまう. 攻撃も, リーチが短くぎこちない突きなど, 使いにくいものが多い.
+大きな弱点がいくつかある. 上段攻撃に対しての自動防御は優れているが, 腹部や脚部はあまり守れてない. 加えて, 大きく体を振る動作が多いため, ステップ移動時に大きな隙ができる. なお, 常時動いている代償なのか, 歩行速度がけっこう遅い. ロングガードもとても弱い. ただでさえ短い剣をあまり突き出さないため, 普通に攻撃が届いてしまう. 攻撃も, リーチが短くぎこちない突きや予備動作のある斬り込みなど, 使いにくいものが多い.
 
 当時のヨーロッパ側の文献は, 中東の兵士は剣で打ち合うことをせず, 間合いを取って回避するスタイルだったと書いているらしいので, アレクサンデルについても, 左右のステップに同期して移動キーを押して素早く動くことで, 似たような動きができるかもしれない.
 
 ### コマンド
 
 :::{.panel-tabset}
+
+#### キーボード
+
+```{r}
+#| label: alex-key
+#| results: asis
+
+a <- map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table(dir = "../../../../img/key")
+a %>% as_html_table()
+```
 
 #### XBox
 
@@ -31,19 +43,7 @@ source(here::here("script/common.R"))
 map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), read_csv) %>%
   bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
   to_table() %>%
-  as_html_table
-```
-
-#### キーボード
-
-```{r}
-#| label: alex-key
-#| results: asis
-
-map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(dir = "../../../../img/key") %>%
-  as_html_table
+  as_html_table()
 ```
 
 #### PS
@@ -55,7 +55,7 @@ map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), re
 map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), read_csv) %>%
   bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
   to_table(dir = "../../../../img/ps") %>%
-  as_html_table
+  as_html_table()
 ```
 
 

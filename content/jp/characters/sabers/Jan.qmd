@@ -6,7 +6,7 @@ source(here::here("script/common.R"))
 
 ### 概要 {-}
 
-最初期からいるキャラクターで, 元々ヤツェク (Jacek) という名前だったが, [ヤツェク(真)](Jacek.qmd#sec-Jacek) が登場してからはヤンに改名された.
+最初期からいるキャラクターで, 元々ヤツェク (Jacek) という名前だったが, [ヤツェク(真)](Jacek.qmd#sec-Jacek) が登場してからはヤンに改名された. 映画とかでよく見るステロタイプなポーランド貴族の格好をしている.
 
 
 ### 特性 {-}
@@ -19,17 +19,6 @@ source(here::here("script/common.R"))
 
 :::{.panel-tabset}
 
-#### XBox
-
-```{r, jan}
-#| label: jan
-
-map_df(list.files(here::here("commands/"), pattern = "jan", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table() %>%
-  as_html_table
-```
-
 #### キーボード
 
 ```{r}
@@ -39,6 +28,17 @@ map_df(list.files(here::here("commands/"), pattern = "jan", full.names = T), rea
 map_df(list.files(here::here("commands/"), pattern = "jan", full.names = T), read_csv) %>%
   bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
   to_table(dir = "../../../../img/key") %>%
+  as_html_table
+```
+
+#### XBox
+
+```{r, jan}
+#| label: jan-xbox
+
+map_df(list.files(here::here("commands/"), pattern = "jan", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table() %>%
   as_html_table
 ```
 
@@ -58,11 +58,11 @@ map_df(list.files(here::here("commands/"), pattern = "jan", full.names = T), rea
 
 ### 歴史的背景 {-}
 
-動きは19世紀前半に書かれた Starzewski のマニュアルに基づいている. ポーランドで最も有名な (そして現存する最も古い) サーベルのマニュアルである. Hellish Quart というゲームのタイトル, およびメニュー画面でよく出てくるあの図もこれが出典である.^[歴史的にはもう少し古い資料にも示唆するものがある]. コマンド表のうち, One, Two, Three の最後の一撃がタイトルの Hellish Quart に対応する動きになるはずだが, 特別に強いわけではない...
+動きは19世紀前半に書かれた Starzewski のマニュアルに基づいている. ポーランドで最も有名な (そして現存する最も古い) サーベルのマニュアルである. Hellish Quart というゲームのタイトル, およびメニュー画面でよく出てくるあの図もこれが出典である.^[歴史的にはもう少し古い資料にも示唆するものがある]. コマンド表のうち, One, Two, Three の最後の一撃がタイトルの Hellish Quart に対応する動きになるはずだが, 特別に強いわけではない... それに, Stazewski のマニュアルには裏刃を使った攻撃は書いてないような…
 
 <iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480307893513" height="459" width="345" frameborder="0" scrolling="no" ></iframe>
 
-キャラクターの造形は歴史ドラマシリーズ Diabeł Łańcucki の主人公 Jacek Dydyński が元ネタらしい. しかし, ヤツェク(真)が正式にドラマのスピンオフキャラクターとして登場したため偽ヤツェクになってしまった.
+キャラクターの造形は歴史ドラマシリーズ Diabeł Łańcucki の主人公 Jacek Dydyński が元ネタらしい. しかし, ヤツェク(真)が正式にドラマのスピンオフキャラクターとして登場したためヤンに改名されてしまった.
 
 練習モードではサーベルの代わりに細い棒きれを持っている. この棒は palcat と呼ばれる. 棒で練習をしている当時の絵画がいくつか現存している.
 
@@ -73,3 +73,5 @@ map_df(list.files(here::here("commands/"), pattern = "jan", full.names = T), rea
 <iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480328822822" height="659" width="345" frameborder="0" scrolling="no" ></iframe>
 
 ヤンに限ったことではないが, このキャラクターの衣装はどれも不自然であることに, 私は長い間疑問を持っていた. どれも昔の歴史映画で使われた, 当時の絵画ではあまり見ないか, 複数の時代や地域の流行のちゃんぽんのような, 不自然なものが多い. だが, 開発者の衣装に関するコメントを見つけた^[https://www.youtube.com/post/Ugkxez04dvAc6c8jsnhdLzNnSIRvdCVSPIh_].  昔の映画セットをレンタルする業者から少し古い衣装を借りるのが一番手間がかからないらしい.
+
+参考にしている衣装以前に, リギングがあまりうまくいってない気もする.

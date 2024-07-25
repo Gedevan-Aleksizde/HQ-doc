@@ -25,6 +25,6 @@
 <circle cx='26.18' cy='9.82' r='7.85' style='stroke-width: 0.71; fill: #BEBEBE;' />
 <circle cx='9.82' cy='26.18' r='7.85' style='stroke-width: 0.71; fill: #BEBEBE;' />
 <circle cx='26.18' cy='26.18' r='7.85' style='stroke-width: 0.71; fill: #BEBEBE;' />
-<text x='26.18' y='15.32' text-anchor='middle' style='font-size: 15.00px;fill: #FFFF00; font-family: "Liberation Sans";' textLength='15.00px' lengthAdjust='spacingAndGlyphs'>△</text>
+<text x='26.18' y='15.18' text-anchor='middle' style='font-size: 15.00px;fill: #FFFF00; font-family: "Arial";' textLength='15.00px' lengthAdjust='spacingAndGlyphs'>△</text>
 </g>
 </svg>

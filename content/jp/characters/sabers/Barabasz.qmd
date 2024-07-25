@@ -16,17 +16,6 @@ source(here::here("script/common.R"))
 
 :::{.panel-tabset}
 
-#### XBox
-
-```{r}
-#| label: barabasz
-
-map_df(list.files(here::here("commands/"), pattern = "barabasz", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table() %>%
-  as_html_table
-```
-
 #### キーボード
 
 ```{r}
@@ -36,6 +25,17 @@ map_df(list.files(here::here("commands/"), pattern = "barabasz", full.names = T)
 map_df(list.files(here::here("commands/"), pattern = "barabasz", full.names = T), read_csv) %>%
   bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
   to_table(dir = "../../../../img/key") %>%
+  as_html_table
+```
+
+#### XBox
+
+```{r}
+#| label: barabasz-xbox
+
+map_df(list.files(here::here("commands/"), pattern = "barabasz", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table() %>%
   as_html_table
 ```
 

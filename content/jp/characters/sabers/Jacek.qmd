@@ -8,18 +8,30 @@ source(here::here("script/common.R"))
 
 {{< video https://www.youtube.com/watch?v=J9AWiNIvllc >}}
 
-v2023.09.08から登場した. 登場に伴い, これまでパッケージ画像で中央にいて主人公っぽい雰囲気だったヤツェクと名乗っていたキャラクターは「[ヤン] (#Jan)」に改名されてしまった.
+v2023.09.08から登場した. 登場に伴い, これまでパッケージ画像で中央にいて主人公っぽい雰囲気だったヤツェクと名乗っていたキャラクターは「[ヤン](Jan.qmd$sec-Jan)」に改名されてしまった.
 
 ### 特性 {-}
 
 動作に隙が少なく, 手数も多く使いやすいが, 一部慣れが必要な動きがあるので中級者向けだと思う. 真ヤツェクは, ゲデオンのような左右に大きく振る攻撃も, [ラースロー](Laszlo.qmd#sec-Laszlo)や[アレクサンデル](Aleksander.qmd#sec-Aleksander)のような手元だけの出の早い連続攻撃も, どちらも可能である. 左右の切り替えは同じ方向への攻撃と移動を同時に行うことでできる. あるいは後方へ飛び退くことで右に戻せる. 足の左右でコマンドはさほど変わらない.
-斬撃は[サムエル](Samuel.qmd#sec-Samuel) に似て, 威力の低い攻撃が多いため, 一撃を入れただけで油断することなく, 相手を確実に仕留めるように注意するとよい. また, 突き攻撃は攻撃後に隙が大きい.
+斬撃は[サムエル](Samuel.qmd#sec-Samuel) に似て, 威力の低い攻撃が多いため, 一撃を入れただけで油断することなく, 相手を確実に仕留めるように注意するとよい. また, 突き攻撃は攻撃後に隙が大きく, あまりリーチがない. その代わりなのか, 前後のステップ移動は妙に飛距離がある.
 
 攻撃アニメーションは競技っぽい動きが多い. モーションアクターのオルブリフスキのスタイルをそのまま反映しているのだろう.
 
 ### コマンド {-}
 
 :::{.panel-tabset}
+
+#### キーボード
+
+```{r}
+#| label: jacek2-key
+#| results: asis
+
+map_df(list.files(here::here("commands/"), pattern = "jacek2", full.names = T), read_csv) %>%
+  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+  to_table(is_lr = T, dir = "../../../../img/key") %>%
+  as_html_table
+```
 
 #### XBox
 
@@ -30,19 +42,7 @@ bind_rows(
   map_df(list.files(here::here("commands/"), pattern = "jacek2", full.names = T), ~read_csv(.x, col_types = "c"))
   ) %>%
   bind_rows(read_csv(here::here("commands/misc_common.csv"), col_types = "c")) %>%
-  to_table(lr = T) %>%
-  as_html_table
-```
-
-#### キーボード
-
-```{r}
-#| label: jacek2-key
-#| results: asis
-
-map_df(list.files(here::here("commands/"), pattern = "jacek2", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(lr = T, dir = "../../../../img/key") %>%
+  to_table(is_lr = T) %>%
   as_html_table
 ```
 
@@ -54,7 +54,7 @@ map_df(list.files(here::here("commands/"), pattern = "jacek2", full.names = T), 
 
 map_df(list.files(here::here("commands/"), pattern = "jacek2", full.names = T), read_csv) %>%
   bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(lr = T, dir = "../../../../img/ps") %>%
+  to_table(is_lr = T, dir = "../../../../img/ps") %>%
   as_html_table
 ```
 
@@ -62,9 +62,11 @@ map_df(list.files(here::here("commands/"), pattern = "jacek2", full.names = T), 
 
 ### 歴史的背景 {-}
 
-初期から存在したヤツェクの元になった, 小説 Diabeł Łańcucki の主人公である. この小説はフィクションだが, さらにその原型となった17世紀の人物が実在する. 著作権の許可が取れたのか, 旧来のヤツェクの名前を奪って登場した. 開発者の投稿した動画では, モーションアクターのアントニ゠オルブリフスキ (Antoni Olbrychski) が大々的に宣伝されている. 以前の動画でも何度か映っていた彼は, 長剣を始め, 剣術選手権で優れた成績を収めている. また, 映画好きの人は知っているかも知れない, 俳優ダニエル゠オルブリフスキの孫でもある. ヤツェクのスタイルについてもミクラシェフスキ氏に質問したところ, これも[サムエル](#Samuel)同様オルブリフスキ氏のスタイルが強く反映されているらしい. 剣の振り方はサムエル同様に, 20世紀初頭に成立したイタロ゠ハンガリアン式で, 頻繁に足が切り替わるのは彼のもう1つの専門であるドイツ式長剣術の影響だろう, と言っていた.
+初期から存在したヤツェクの元になった, 小説 Diabeł Łańcucki の主人公である. この小説はフィクションだが, さらにその原型となった17世紀の人物が実在する. 著作権の許可が取れたのか, 旧来のヤツェクの名前を奪って登場した. 開発者の投稿した動画では, モーションアクターのアントニ゠オルブリフスキ (Antoni Olbrychski) が大々的に宣伝されている. 以前の動画でも何度か映っていた彼は, 長剣を始め, 剣術選手権で優れた成績を収めている. また, 映画好きの人は知っているかも知れない, 俳優ダニエル゠オルブリフスキの孫でもある. ヤツェクのスタイルについてもミクラシェフスキに質問したところ, これも[サムエル](#Samuel)同様オルブリフスキ氏のスタイルが強く反映されているらしい. 剣の振り方はサムエル同様に, 20世紀初頭に成立したイタロ゠ハンガリアン式で, 頻繁に足が切り替わるのは彼のもう1つの専門であるドイツ式長剣術の影響だろう, と言っていた. 上半身と下半身の動きがあまり同期していないように見えて, 少し不自然なのはそれが原因かもしれない.
 
-こっちはかなり前にオルブリフスキ氏の所属している Akademia Szermierzy の公開した動画で, 本人も出演している. (ここで使われてる衣装の作者を知っている気がする...)
+なお, オルブリフスキはそれ以前にも, アーリーアクセス開始直後から開発者の投稿する動画にさりげなく映っていたり, クレジットもされていたため, 他のキャラクターのモーションアクターもしていた可能性がある.
+
+こっちはかなり前にオルブリフスキの所属している Akademia Szermierzy の公開した動画で, 本人も出演している. (ここで使われてる衣装の作者を知っている気がする...)
 
 {{< video https://www.youtube.com/watch?v=QttVCVXe8tc >}}
 
