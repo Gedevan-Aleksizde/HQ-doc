@@ -34,7 +34,13 @@ ragg_png_mod <- function(...){
   ragg::agg_png(..., units = "in", res = 300)
 }
 
-make_buttons_svg <- function(buttons, type = "xbox", dev = svglite::svglite, save = T, dir = NULL, name = paste0(paste(buttons, collapse = "+"), ".svg")){
+make_buttons_svg <- function(
+    buttons, type = "xbox",
+    dev = svglite::svglite,
+    save = T,
+    dir = NULL,
+    name = paste0(paste(buttons, collapse = "+"), ".svg"),
+    standalone = F){
   if(type == "xbox"){
     g <- d %>% mutate(!!sym(type) := if_else(key %in% buttons, !!sym(type), NA_character_)) %>%
       ggplot(aes(x = x, y = y)) +
@@ -70,7 +76,7 @@ make_buttons_svg <- function(buttons, type = "xbox", dev = svglite::svglite, sav
     scale_color_manual(guide = F, breaks = factor(1:5), values = c("blue", "yellow", "green", "orange", "grey")) +
     theme_void(base_family = "Noto Sans CJK JP")
   if(save){
-    ggsave(plot = g, device = dev, path = dir, filename = name, width = 1, height = 1, scale = .5)
+    ggsave(plot = g, device = dev, path = dir, filename = name, width = 1, height = 1, scale = .5, standalone = standalone)
   } else {
     return(g)
   }
@@ -78,7 +84,8 @@ make_buttons_svg <- function(buttons, type = "xbox", dev = svglite::svglite, sav
 
 make_direct_buttons <- function(
     buttons, dev = svglite::svglite, save = T, dir = NULL,
-    name = paste0(paste(buttons, collapse = "+"), ".svg")
+    name = paste0(paste(buttons, collapse = "+"), ".svg"),
+    standalone = F
 ){
   dat <- d_direction %>% mutate(col := key %in% buttons)
   g <- ggplot() +
@@ -91,7 +98,7 @@ make_direct_buttons <- function(
     coord_fixed(xlim = c(0 -1/.pt, 1 + 1/.pt), ylim = c(0 - 1/.pt, 1 + 1/.pt)) +
     theme_void()
   if(save){
-    ggsave(plot = g, device = dev, path = dir, filename = name, width = 230/ (.pt * 200), height = 230 / (200 * .pt), standalone = F)
+    ggsave(plot = g, device = dev, path = dir, filename = name, width = 230/ (.pt * 200), height = 230 / (200 * .pt), standalone = standalone)
   } else {
     return(g)
   }
@@ -125,7 +132,10 @@ to_table <- function(d, is_lr = F, dir = "../../../../img/xbox"){
       common = is.na(lr),
       lr = if_else(common, "l", lr)) %>%
       pivot_wider(id_cols = c(mode, name, common), names_from = lr, values_from = command) %>%
-      mutate(l = if_else(is.na(l), BLANK_SYMBOL, l), r = if_else(common, "", if_else(is.na(r), BLANK_SYMBOL, r))) %>%
+      mutate(
+        l = if_else(is.na(l), BLANK_SYMBOL, l),
+        r = if_else(common, "", if_else(is.na(r), BLANK_SYMBOL, r))
+      ) %>%
       dplyr::select(-common) %>% mutate(across(c(l, r), replace_keys, dir = dir))
   } else{
     t <- dplyr::select(t, -one_of("lr")) %>% mutate(command = replace_keys(command, dir = dir))
@@ -158,7 +168,7 @@ to_table <- function(d, is_lr = F, dir = "../../../../img/xbox"){
       sprintf("『貴婦人』の構え時 (%s  %s %s)",
               paste(reuse_svg(file.path(dir, "D.svg")), collapse = "\n"),
               paste(reuse_svg(file.path(dir, "L.svg")), collapse = "\n"),
-              paste(reuse_svg(file.path(dir, "Y.svg")), collapse = "\n")
+              paste(reuse_svg(file.path(dir, "T.svg")), collapse = "\n")
       )
     ),
     holy = html(

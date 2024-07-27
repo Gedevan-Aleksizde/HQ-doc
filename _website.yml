@@ -1,5 +1,12 @@
 website:
     title: "Hellish Quart 日本語情報"
+    description: "Hellish Quart の日本語情報"
+    twitter-card: true
+    site-url: https://gedevan-aleksizde.github.io/HQ-doc/
+    open-graph:
+        locale: ja_JP
+        site-name: "Hellish Quart 日本語情報"
+        image: https://gedevan-aleksizde.github.io/HQ-doc/img/hq.png
     repo-url: https://github.com/Gedevan-Aleksizde/HQ-doc
     repo-actions: [edit, issue]
     bread-crumbs: true

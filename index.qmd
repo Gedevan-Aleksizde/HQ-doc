@@ -1,8 +1,6 @@
 ---
 site: bookdown::bookdown_site
 title: "Hellish Quart 日本語情報"
-author: "under-identified"
-description: "Hellish Quart 日本語情報"
 ---
 
 
