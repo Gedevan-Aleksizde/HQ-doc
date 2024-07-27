@@ -8,7 +8,7 @@ title: "Hellish Quart 日本語情報"
 
 :::{.callout-warning}
 
-Hellish Quart は現在, アーリーアクセスの段階です. 仕様が頻繁に変更される可能性に注意してください. このドキュメントは `r params$gamever` 準拠のものです.
+Hellish Quart は現在, アーリーアクセスの段階です. 仕様が頻繁に変更される可能性に注意してください. このドキュメントは {{< var gamever >}} 準拠のものです.
 
 :::
 
