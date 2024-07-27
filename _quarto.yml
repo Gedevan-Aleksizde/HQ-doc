@@ -1,7 +1,9 @@
 date: now
 date-modified: last-modified
 date-format: "YYYY-MM-DDTHH:mm:ss zzz"
+author: "under-identified"
 booklanguage: ja
+license: "CC BY-SA"
 monofont: "Ricty"
 link-citations: true
 fontsize: 12pt
@@ -29,4 +31,3 @@ execute:
     output: "asis"
 params:
     gamever: 2024.07.09.0
-license: "CC BY-SA"
