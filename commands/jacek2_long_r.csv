@@ -1,0 +1,6 @@
+name_orig,name,command,mode,lr
+Guillotine,ギロチン,[Y],long,r
+Thrust,突き,[R] [Y],long,r
+Far Thrust,遠突き,[R] [T],long,r
+From The Right!,右から!,[U] [T],long,r
+From The Left!,左から!,[D] [Y],long,r

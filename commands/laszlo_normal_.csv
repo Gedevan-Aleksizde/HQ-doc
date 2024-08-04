@@ -1,0 +1,16 @@
+name_orig,name,command,mode,lr
+Combo 1,上段左右,[Y] [T],normal,NA
+Combo 2,上段右左,[T] [Y],normal,NA
+Combo 3,下段上段,[G] [Y],normal,NA
+Combo 4,"上段下段",[Y] [G],normal,NA
+Combo 5,上段下段,[T] [H],normal,NA
+Combo 6,下段2連,[H] [H],normal,NA
+Belly Thrust,中段突き,[R] [R] [G],normal,NA
+Wrist Hinge,前腕の出の速い斬り,[R] [Y] [T],normal,NA
+Up and Thrust,斬り上げから突き,[R] [H] [G],normal,NA
+Snap Cut,出の速い斬撃,[D] [R] [Y],normal,NA
+Low Swipe,下段斬り払い,[D] [R] [G],normal,NA
+False Edge Uppercut,変則的な斬り上げ,[D] [D] [H],normal,NA
+Headgames,斬り下ろしフェイントからの攻撃,[D] [L] [T],normal,NA
+Retract Leg,足引っ込め,(相手の下段攻撃に合わせて) + [L],normal
+Punish,下段攻撃へのカウンター,(足引っ込め成功時に) [T] or [H],normal

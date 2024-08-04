@@ -1,0 +1,4 @@
+name_orig,name,command,mode,lr
+False Edge Cut,裏刃斬り,[T],low,r
+Anticircle,逆切断円,[G],low,r
+Complete Anticircle,逆完全切断円,[G] [T],low,r

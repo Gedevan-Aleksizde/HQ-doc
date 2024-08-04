@@ -1,0 +1,4 @@
+name_orig,name,command,mode,lr
+Lunge,突き, [D] [R] [Y],normal,r
+Workaround,左右に踏み込み攻撃,[U] [T] [H],normal,r
+Needle,切り上げ+突き,[U] [G] [Y],normal,r

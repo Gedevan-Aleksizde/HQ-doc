@@ -1,0 +1,17 @@
+name_orig,name,command,mode,lr
+Combo 1,コンボ1,[Y] [T],normal,r
+Combo 2,コンボ2,[T] [Y],normal,r
+Combo 3,コンボ3, [H] [T],normal,r
+Combo 4,コンボ4, [G] [Y],normal,r
+Doubledown,ダブルダウン,[R] [Y] [Y],normal,r
+Repeater,リピーター,[R] [Y] [T],normal,r
+To Back up,バックアップ,[R] [Y] [G],normal,r
+Up and Down,アップ&ダウン,[R] [H] [T],normal,r
+Mower,芝刈り,[R] [H] [G],normal,r
+Spearhead,2撃目は突き,[R] [G] [Y],normal,r
+Sidestep Combo 1,横飛びコンボ1,[U] [Y] [T],normal,r
+Sidestep Combo 2,横飛びコンボ2,[U] [H] [T],normal,r
+Sidestep Combo 3,横飛びコンボ3,[D] [Y] [T],normal,r
+Sidestep Combo 4,横飛びコンボ4,[D] [H] [T],normal,r
+Sidestep Combo 5,横飛びコンボ5,[D] [G] [Y],normal,r
+Go Around,回り込み攻撃,[D] [R] [Y],normal,r

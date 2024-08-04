@@ -1,0 +1,5 @@
+name_orig,name,command,mode,lr
+High Thrust,上段突き,[T],long,r
+Low Thrust,下段突き,[Y],long,r
+Spear,突き,[R] [T] or [R] [Y],long,r
+Thrust,,[U] [T],long,r

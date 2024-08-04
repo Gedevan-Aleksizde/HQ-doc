@@ -1,0 +1,5 @@
+name_orig,name,command,mode,lr
+Mill,踏み込みながら袈裟斬り,[R] [G] [H],normal,r
+One More!,手元で素早い2連,[T] [T], normal,r
+Wide Cut,大きく横に払う,[D] [L] [T],normal,r
+In Half!,Wide Cut + 踏み込み,[D] [R] [G],normal,r
