@@ -1,0 +1,3 @@
+name_orig,name,command,mode,lr
+Slice 1,切断1,[Y],high,l
+Slice 2,切断2,[T],high,l

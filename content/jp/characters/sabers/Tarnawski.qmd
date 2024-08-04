@@ -36,10 +36,7 @@ v2024.04.10から登場した. 名前の表記に揺らぎが多い. Tarnavski�
 #| label: tarnawski-key
 #| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "tarnawski", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(is_lr = T, dir = "../../../../img/key") %>%
-  as_html_table
+command_table("tarnawski", T)
 ```
 
 #### XBox
@@ -47,24 +44,15 @@ map_df(list.files(here::here("commands/"), pattern = "tarnawski", full.names = T
 ```{r}
 #| label: tarnawski-xbox
 
-bind_rows(
-  map_df(list.files(here::here("commands/"), pattern = "tarnawski", full.names = T), ~read_csv(.x, col_types = "c"))
-  ) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"), col_types = "c")) %>%
-  to_table(is_lr = T) %>%
-  as_html_table
+command_table("tarnawski", T, "../../../../img/xbox")
 ```
 
 #### PS
 
 ```{r}
 #| label: samuel-ps
-#| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "tarnawski", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(is_lr = T, dir = "../../../../img/ps") %>%
-  as_html_table
+command_table("tarnawski", T, "../../../../img/ps")
 ```
 
 :::

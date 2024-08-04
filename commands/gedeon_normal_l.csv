@@ -1,0 +1,5 @@
+name_orig,name,command,mode,lr
+Feint (F), 横薙ぎのフェイント攻撃, [Y] [G], normal, l
+Other Cheek,顔面狙いの切りつけ2連,[Y] [T],normal,l
+Cut to Thrust,斬撃からの突き,[Y] [R] [T],normal,l
+Tip Toe Chop,,[D] [R] [Y],normal,l

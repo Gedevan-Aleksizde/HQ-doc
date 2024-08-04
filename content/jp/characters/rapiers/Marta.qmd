@@ -34,12 +34,8 @@ v2022.07.29 で追加された, [マリー](Marie.qmd#sec-Marie)に続く2人目
 
 ```{r}
 #| label: marta-key
-#| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "marta", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(dir = "../../../../img/key") %>%
-  as_html_table
+command_table("marta")
 ```
 
 #### XBox
@@ -47,22 +43,15 @@ map_df(list.files(here::here("commands/"), pattern = "marta", full.names = T), r
 ```{r}
 #| label: marta-xbox
 
-map_df(list.files(here::here("commands/"), pattern = "marta", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table %>%
-  as_html_table
+command_table("marta", dir = "../../../../img/xbox")
 ```
 
 #### PS
 
 ```{r}
 #| label: marta-ps
-#| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "marta", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(dir = "../../../../img/ps") %>%
-  as_html_table
+command_table("marta", dir = "../../../../img/ps")
 ```
 
 :::

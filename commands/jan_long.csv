@@ -1,0 +1,6 @@
+name_orig,name,command,mode
+Chop,切り下ろし,[Y],long
+TrickShot,トリックショット,[T],long
+Cutthroat,喉元への突き,[R] [T],long
+Go Around,左に避けつつ攻撃,[U] [T],long
+Push Down Weapon,剣を弾く,[H] or [G],long

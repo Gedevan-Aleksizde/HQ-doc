@@ -6,6 +6,8 @@ title: "Hellish Quart 日本語情報"
 
 # 概要 {-}
 
+<https://hq-doc.firebaseapp.com/>
+
 :::{.callout-warning}
 
 Hellish Quart は現在, アーリーアクセスの段階です. 仕様が頻繁に変更される可能性に注意してください. このドキュメントは {{< var gamever >}} 準拠のものです.
@@ -16,8 +18,12 @@ Hellish Quart は現在, アーリーアクセスの段階です. 仕様が頻�
 
 このサイトのコンテンツを [クリエイティブコモンズ表示-継承 4.0 国際ライセンス](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) で公開します. ライセンスと著作権の許容する範囲で自由にお使いください. 掲載されている画像や動画の一部には, 個別に著作権やライセンスが指定されている場合があります.
 
-編集を提案することもできます. 採用された提案内容も上記のライセンスが適用されます.
+編集を提案することもできます. 採用された提案内容に対しても, 基本的に上記のライセンスが適用されます.
 
 :::
 
 {{< video https://www.youtube.com/watch?v=tE0IZ4Yw96w >}}
+
+このサイトは, 以前公開した以下のページを再編集加筆したものです.
+
+https://under-identified.hatenablog.com/entry/2021/05/04/184614

@@ -1,0 +1,5 @@
+name_orig,name,command,mode
+Stab,突き刺し, [Y], long
+Stab And Cut, 突き、斬撃,[Y] [Y],long
+Top Cut, 上段斬り, [T], long
+Leg Sweep, 足払い, [H], long

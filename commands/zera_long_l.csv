@@ -1,0 +1,5 @@
+name_orig,name,command,mode,lr
+Trust,突き,[Y] or [T],long,l
+Push Down Weapon,剣を弾く,[H] or [G],long,l
+Roof Guard,『屋根』の構え,[D] [R],long,l
+Fool's Guard,『愚者』の構え,[D] [L],long,l

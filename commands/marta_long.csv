@@ -1,0 +1,10 @@
+name_orig,name,command,mode
+"Lunge", "フォント", "[T], long
+"Lunge to Cut",フォント+斬り, [T] [T],long
+"Clockwork", , [R] [Y], long
+"Top Chop", , [R] [Y] [T], long
+"Go Under", , [H], long
+"Takeaway", , [D] [Y], long
+"Redirect", , "[H] [T]", long
+"Side Stab", "側面突き", "[U] [T]", long
+"Side Cut", "側面斬り", "[U] [G]", long

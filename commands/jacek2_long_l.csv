@@ -1,0 +1,5 @@
+name_orig,name,command,mode,lr
+Top Cut,上段斬り,[Y],long,l
+Top Thrust,上段突き,[R] [Y],long,l
+Magic Attack,魔法の一撃,[R] [T],long,l
+Low Thrust,膝突き,[R] [H],long,l

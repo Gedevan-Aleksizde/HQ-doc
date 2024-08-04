@@ -1,0 +1,19 @@
+name_orig,name,command,mode,lr
+Combo 1,コンボ1,[Y] [T],normal,r
+Triple Combo,三連撃,[Y] [T] [Y],normal,r
+Cut to Thrust,斬撃からの突き,[T] [Y],normal,r
+Combo 2,コンボ2,[T] [T],normal,r
+Combo 3,コンボ3,[H] [G],normal,r
+Combo 4,コンボ4,[Y] [G],normal,r
+Combo 5,コンボ5,[G] [G],normal,r
+Forward Combo 1,前進コンボ1,[R] [Y] [T],normal,r
+Dash Attack,ダッシュ攻撃,[R] [R] [Y],normal,r
+Stab,突き刺し,[D] [R] [Y],normal,r
+"Stab, Stab",刺し刺し,[D] [R] [Y] [Y],normal,r
+Big Slice,大切断,[D] [R] [T],normal,r
+Knee Attack,膝攻撃,[D] [R] [G],normal,r
+Leg Chop,膝切断,[D] [R] [H],normal,r
+Backward Combo 1,後退コンボ1,[L] [Y] [T],normal,r
+Backward Combo 2,後退コンボ2,[L] [H] [G],normal,r
+Left Sidestep Combo,右踏み込みコンボ1,[U] [T] [Y],normal,r
+Right Sidestep Combo,左踏み込みコンボ2,[D] [Y] [T],normal,r

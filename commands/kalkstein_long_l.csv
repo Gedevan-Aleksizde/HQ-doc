@@ -1,0 +1,6 @@
+name_orig,name,command,mode,lr
+Snap Cut, 手首だけで斬りつける,[Y],long,l
+Halfcircle Left,奥に避けつつ袈裟斬り,[U] [T],long,l
+Halfcircle Right,手前に避けつつ袈裟斬り,[D] [Y],long,l
+Spear,踏み込んでから突き, [R] [T],long,l
+Push Down Weapon,剣を弾く,[H] or [G],long,l

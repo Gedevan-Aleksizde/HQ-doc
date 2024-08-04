@@ -1,0 +1,9 @@
+name_orig,name,command,mode,lr
+Combo 1,コンボ1,[Y] [T],normal,l
+Cut to Thrust,斬撃からの突き,[T] [Y],normal,l
+Combo 2,コンボ2,[T] [H],normal,l
+Combo 3,コンボ3,[Y] [Y],normal,l
+Combo 4,コンボ4,[D] [Y] [T],normal,l
+"One, Two",一、二,[R] [Y] [T],normal,l
+Up and thrust,上突き,[R] [H] [T],normal,l
+Dash Attack,ダッシュ攻撃,[R] [R] [Y],normal,l

@@ -1,0 +1,5 @@
+name_orig,name,command,mode
+Autoblock,自動防御,攻撃しないでいる,misc
+Taunt,フェイントの足踏み,[YH] or RB,misc
+Grab,掴み,[TG] or LB,misc
+Push,当て身,[TY] or RT,misc

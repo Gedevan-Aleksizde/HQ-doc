@@ -1,0 +1,9 @@
+name_orig,name,command,mode
+High Guard,上段構えに切替,[D] [R],long
+Low Guard,下段構えに切替, [D] [L], long
+Thrust,突き,[Y],long
+Lunge,踏み込んで突き,[R] [Y],long
+Double Lunge,踏み込んで二連突き, [R] [Y] [T],long
+Circle,, [Y],long
+Circle to Lunge,, [Y] [T],long
+Offhand Parry,左手で払いつつ攻撃, [R] [T],long

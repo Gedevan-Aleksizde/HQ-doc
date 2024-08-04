@@ -1,0 +1,6 @@
+name_orig,name,command,mode
+Chop,切り下ろし,[Y], long
+Trickshot,トリックショット,[T], long
+Cutthroat,喉元への突き,[R] [Y], long
+Side Cut,右に避けつつ攻撃,[D] [H], long
+Wrist Roundcut,手首のスナップで斬撃,[U] [Y], long

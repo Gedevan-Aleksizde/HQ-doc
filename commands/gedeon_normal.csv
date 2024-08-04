@@ -1,0 +1,10 @@
+name_orig,name,command,mode
+Combo 1,左右斬り下ろし,[T] [Y],normal
+Combo 2,右左斬り下ろし,[Y] [T],normal
+Combo 3,上下2連,[T] [H],normal
+Combo 4,下上2連, [H] [T],normal
+Combo 5,上下2連その2,[Y] [G],normal
+Combo 6,下上2連,[G] [Y],normal
+Combo 7,右左斬り上げ,[G] [H],normal
+Combo 8,右左斬り上げ,[H] [G],normal
+Handslap,ステップし斬りつける,[U] [U] [T],normal
