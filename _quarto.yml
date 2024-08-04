@@ -9,7 +9,7 @@ link-citations: true
 fontsize: 12pt
 project:
     type: website
-    output-dir: docs
+    output-dir: public
 lang: ja
 toc: true
 format:
