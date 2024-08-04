@@ -6,6 +6,8 @@ title: "Hellish Quart 日本語情報"
 
 # 概要 {-}
 
+<https://hq-doc.firebaseapp.com/>
+
 :::{.callout-warning}
 
 Hellish Quart は現在, アーリーアクセスの段階です. 仕様が頻繁に変更される可能性に注意してください. このドキュメントは {{< var gamever >}} 準拠のものです.
