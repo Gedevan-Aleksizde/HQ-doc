@@ -4,8 +4,8 @@ Combo 2,コンボ2,[Y] [T],normal,r
 Combo 3,コンボ3,[H] [T],normal,r
 Combo 4,コンボ4,[T] [H],normal,r
 Combo 5,コンボ5, [R] [G] [Y],normal,r
-"One, two 1",ワンツーその1,[R] [T] [Y],normal,r
-"One, two 2",ワンツーその2[R] [Y] [T],normal,r
+"One, two 1","ワンツーその1","[R] [T] [Y]","normal","r"
+"One, two 2","ワンツーその2","[R] [Y] [T]","normal","r"
 Repeater,リピーター,[R] [Y] [Y],normal,r
 Snap Cut,スナップカット,[D] [R] [Y],normal,r
 Dash Attack,ダッシュ斬り,[R] [R] [Y],normal,r
