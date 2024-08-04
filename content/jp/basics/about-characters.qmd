@@ -7,23 +7,23 @@ title: キャラクター一覧
 いまのところこういうキャラクターがいる.^[Development Roadmap によれば, 最終的に12種類程度のキャラクターを用意したいらしい] ゲーム情報サイトとかでは17世紀の西洋剣術という触れ込みで報じてるが, 実は元ネタの剣術の使われた時期は15~19世紀とけっこう幅がある. だが開発者は「17世紀頃のポーランドと何らかの接点があったという歴史的裏付けがあるものを採用する方針」と言ってたので, サムライとかカタナとかニンジャとかの参戦は期待しないほうがいいだろう^[2023年5月末のアップデートで, mod機能が追加された. 作者があわせて公開したmodの作例の中には, ~~鉄拳の吉光のパチモンみたいな~~和風っぽいスキンに変えられたラースローが含まれている. これは和風キャラクターの登場と言えなくもない. だが, 外見を変えているだけで動きはいつものままなので, このゲームに関心を持った人たちが欲しがる機能なのか?という疑問もある.].
 
 * サーベル
-    * **ヤン** _Jan_, (旧ヤツェク)
-    * **ゲデオン** _Gedeon_ (肥満中年男性)
-    * **バラバシ** _Barabasz_ (ウクライナコサック)
-    * **ラースロー** _Laszlo_ (旧 _Haidu_, 隻眼)
-    * **アレクサンデル** _Alexander_ (アフリカ系)
-    * **サムエル** _Samuel_ (服がボロい)
-    * **ヤツェク** _Jacek Dydyński_ (新ヤツェク)
-    * **タルナフスキ** Tarnawski (勝利時に大笑いするおじさん)
+    * [**ヤン** _Jan_](../characters/sabers/Jan.qmd), (旧ヤツェク)
+    * [**ゲデオン** _Gedeon_](../characters/sabers/Gedeon.qmd) (肥満中年男性)
+    * [**バラバシ** _Barabasz_](../characters/sabers/Barabasz.qmd) (ウクライナコサック)
+    * [**ラースロー** _Laszlo_](../characters/sabers/Laszlo.qmd) (旧 _Haidu_, 隻眼)
+    * [**アレクサンデル** _Alexander_](../characters/sabers/Aleksander.qmd) (アフリカ系)
+    * [**サムエル** _Samuel_](../characters/sabers/Samuel.qmd) (服がボロい)
+    * [**ヤツェク** _Jacek Dydyński_](../characters/sabers/Jacek.qmd) (新ヤツェク)
+    * [**タルナフスキ** _Tarnawski_](../characters/sabers/Tarnawski.qmd) (勝利時に大笑いするおじさん)
     * **サヴァ** Sava (未登場)
 * 長剣
-    * **イザベラ** _Isabella_ (女長剣使い)
-    * **ジェラ神父** _Father Żera_ (神父)
+    * [**イザベラ** _Isabella_](../characters/longswords/Isabella.qmd) (女長剣使い)
+    * [**ジェラ神父** _Father Żera_](../characters/longswords/FatherZera.qmd) (神父)
 * レイピア
-    * **マリー** _Marie_ (女レイピア使い)
-    * **マルタ** _Marta_ (女レイピア使い, ドレス)
-    * **カルクシュタイン** _Kalkstein_  (バスケットヒルトソード)
+    * [**マリー** _Marie_](../characters/rapiers/Marie.qmd) (女レイピア使い, 帽子)
+    * [**マルタ** _Marta_](../characters/rapiers/Marta.qmd) (女レイピア使い, ドレス)
+    * [**カルクシュタイン** _Kalkstein_](../characters/rapiers/Kalkstein.qmd)  (バスケットヒルトソード)
 * その他
-    * **ヨンドレク** _Jędrek_ (Yendrek) (民族衣装の斧使い)
+    * [**ヨンドレク** _Jędrek_](../characters/extras/Jedrek.qmd) (Yendrek) (民族衣装の斧使い)
 
 その他にも, 開発者は時々開発画面を公開し, 新キャラクターの登場をほのめかせることがある. しかし, 新キャラクターの登場をほのめかした直後のアップデートでまったく予告のないキャラクターが唐突に追加されたりすることはよくあるので, あまり鵜呑みにしてはいけない.
