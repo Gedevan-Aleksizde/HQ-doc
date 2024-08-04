@@ -38,12 +38,8 @@ v2023.09.08から登場した. 登場に伴い, これまでパッケージ画�
 
 ```{r}
 #| label: jacek2-key
-#| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "jacek2", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(is_lr = T, dir = "../../../../img/key") %>%
-  as_html_table
+command_table("jacek2", is_lr = T)
 ```
 
 #### XBox
@@ -51,24 +47,15 @@ map_df(list.files(here::here("commands/"), pattern = "jacek2", full.names = T), 
 ```{r jacek2}
 #| label: jacek2-xbox
 
-bind_rows(
-  map_df(list.files(here::here("commands/"), pattern = "jacek2", full.names = T), ~read_csv(.x, col_types = "c"))
-  ) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"), col_types = "c")) %>%
-  to_table(is_lr = T) %>%
-  as_html_table
+command_table("jacek2", is_lr = T)
 ```
 
 #### PS
 
 ```{r}
 #| label: jacek2-ps
-#| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "jacek2", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(is_lr = T, dir = "../../../../img/ps") %>%
-  as_html_table
+command_table("jacek2", is_lr = T)
 ```
 
 :::

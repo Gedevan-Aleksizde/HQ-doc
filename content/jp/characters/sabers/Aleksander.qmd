@@ -35,36 +35,24 @@ source(here::here("script/common.R"))
 
 ```{r}
 #| label: alex-key
-#| results: asis
 
-a <- map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(dir = "../../../../img/key")
-a %>% as_html_table()
+command_table("alex")
 ```
 
 #### XBox
 
 ```{r}
 #| label: alex-xbox
-#| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table() %>%
-  as_html_table()
+command_table("alex", dir = "../../../../img/xbox")
 ```
 
 #### PS
 
 ```{r}
 #| label: alex-ps
-#| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "alex", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(dir = "../../../../img/ps") %>%
-  as_html_table()
+command_table("alex", dir = "../../../../img/ps")
 ```
 
 

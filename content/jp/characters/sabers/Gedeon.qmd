@@ -34,12 +34,8 @@ source(here::here("script/common.R"))
 
 ```{r}
 #| label: gedeon-key
-#| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "gedeon", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(is_lr = T, dir = "../../../../img/key") %>%
-  as_html_table
+command_table("gedeon", is_lr = T, dir = "../../../../img/key")
 ```
 
 #### XBox
@@ -47,22 +43,15 @@ map_df(list.files(here::here("commands/"), pattern = "gedeon", full.names = T), 
 ```{r}
 #| label: gedeon-xbox
 
-map_df(list.files(here::here("commands/"), pattern = "gedeon", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(is_lr = T) %>%
-  as_html_table
+command_table("gedeon", is_lr = T, dir = "../../../../img/xbox")
 ```
 
 #### PS
 
 ```{r}
 #| label: gedeon-ps
-#| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "gedeon", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(is_lr = T, dir = "../../../../img/ps") %>%
-  as_html_table
+command_table("gedeon", is_lr = T, dir = "../../../../img/ps")
 ```
 
 :::

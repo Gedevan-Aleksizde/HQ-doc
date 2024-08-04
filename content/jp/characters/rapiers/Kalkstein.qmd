@@ -30,12 +30,8 @@ source(here::here("script/common.R"))
 
 ```{r}
 #| label: kalkstein-key
-#| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(is_lr = T, dir = "../../../../img/key") %>%
-  as_html_table
+command_table("kalkstein", is_lr = T)
 ```
 
 #### XBox
@@ -43,10 +39,7 @@ map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T
 ```{r}
 #| label: kalkstein
 
-map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(is_lr = T) %>%
-  as_html_table
+command_table("kalkstein", is_lr = T, dir = "../../../../img/xbox")
 ```
 
 #### PS
@@ -55,10 +48,7 @@ map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T
 #| label: kalkstein-ps
 #| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "kalkstein", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(is_lr = T, dir = "../../../../img/ps") %>%
-  as_html_table
+command_table("kalkstein", is_lr = T, dir = "../../../../img/ps")
 ```
 
 :::

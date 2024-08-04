@@ -203,6 +203,7 @@ to_table <- function(d, is_lr = F, dir = "../../../../img/xbox"){
     fmt_markdown(columns = "name") %>% fmt_markdown(columns = "mode")
 }
 
+
 # gt から不要なHTMLタグを削除する
 as_html_table <- function(gt){
   x <- as_raw_html(gt, inline_css = F) %>% xml2::read_html()
@@ -210,6 +211,24 @@ as_html_table <- function(gt){
   xml2::xml_child(xml2::xml_child(x)) %>% paste(collapse = "") %>% knitr::raw_html()
   xml2::xml_child(xml2::xml_child(x)) %>% paste(collapse = "") %>% knitr::raw_html()
 }
+
+command_table <- function(name, is_lr = F, dir = "../../../../img/key"){
+  if(!is_logical(is_lr)){
+    stop("is_lr must be a logical value")
+  }
+  if(!is_character(dir)){
+    stop("dir must be character")
+  }
+  d_commands <- map_df(list.files(here::here("commands/"), pattern = name, full.names = T), read_csv)
+  if(NROW(d) <= 0){
+    stop(sprintf("No matched files (commands/%s*)", name))
+  }
+  d_commands %>%
+    bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
+    to_table(is_lr = is_lr, dir = dir) %>%
+    as_html_table
+}
+
 
 print_pinterest_embed <- function(id){
   sprintf(

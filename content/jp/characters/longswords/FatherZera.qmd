@@ -43,12 +43,8 @@ source(here::here("script/common.R"))
 
 ```{r}
 #| label: zera-key
-#| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "zera", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(is_lr = T, dir = "../../../../img/key") %>%
-  as_html_table
+command_table("zera", is_lr = T)
 ```
 
 #### XBox
@@ -56,12 +52,7 @@ map_df(list.files(here::here("commands/"), pattern = "zera", full.names = T), re
 ```{r}
 #| label: zera-xbox
 
-bind_rows(
-  map_df(list.files(here::here("commands/"), pattern = "zera", full.names = T), read_csv)
-  ) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(is_lr = T) %>%
-  as_html_table
+command_table("zera", is_lr = T, dir = "../../../../img/xbox")
 ```
 
 #### PS
@@ -70,10 +61,7 @@ bind_rows(
 #| label: zera-ps
 #| results: asis
 
-map_df(list.files(here::here("commands/"), pattern = "zera", full.names = T), read_csv) %>%
-  bind_rows(read_csv(here::here("commands/misc_common.csv"))) %>%
-  to_table(is_lr = T, dir = "../../../../img/ps") %>%
-  as_html_table
+command_table("zera", is_lr = T, dir = "../../../../img/ps")
 ```
 
 :::
