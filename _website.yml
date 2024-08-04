@@ -2,7 +2,7 @@ website:
     title: "Hellish Quart 日本語情報"
     description: "Hellish Quart の日本語情報"
     twitter-card: true
-    site-url: https://gedevan-aleksizde.github.io/HQ-doc/
+    site-url: https://hq-doc.firebaseapp.com/
     open-graph:
         locale: ja_JP
         site-name: "Hellish Quart 日本語情報"
