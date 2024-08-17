@@ -25,6 +25,6 @@ title: キャラクター一覧
     * [**カルクシュタイン** _Kalkstein_](../characters/rapiers/Kalkstein.qmd)  (バスケットヒルトソード)
 * その他
     * [**ヨンドレク** _Jędrek_](../characters/extras/Jedrek.qmd) (Yendrek) (民族衣装の斧使い)
-    * [**マリナ** _Maryna Ludzicka_](..characters/extras/Maryna.qmd) (サーベルと盾)
+    * [**マリナ** _Maryna Ludzicka_](../characters/extras/Maryna.qmd) (サーベルと盾)
 
 その他にも, 開発者は時々開発画面を公開し, 新キャラクターの登場をほのめかせることがある. しかし, 新キャラクターの登場をほのめかした直後のアップデートでまったく予告のないキャラクターが唐突に追加されたりすることはよくあるので, あまり鵜呑みにしてはいけない.
