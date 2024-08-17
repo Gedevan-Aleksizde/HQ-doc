@@ -50,7 +50,7 @@ command_table("tarnawski", T, "../../../../img/xbox")
 #### PS
 
 ```{r}
-#| label: samuel-ps
+#| label: tarnawski-ps
 
 command_table("tarnawski", T, "../../../../img/ps")
 ```
