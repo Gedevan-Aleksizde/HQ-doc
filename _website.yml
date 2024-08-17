@@ -19,7 +19,7 @@ website:
             - section: "基本"
               href: content/jp/basics.qmd
               contents: content/jp/basics/*
-            - section: "キャラクター"
+            - section: "キャラクター別解説"
               href: content/jp/characters.qmd
               contents:
                   - section:
