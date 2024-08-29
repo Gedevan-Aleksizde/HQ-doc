@@ -1,3 +1,8 @@
 name_orig,name,command,mode
 Headsplitter,頭割り,[Y],high
+Headsplitter Surprise,サプライズ首狩り,[Y][H},high
 Far Attack,遠当て,[R][Y],high
+Far Attack Boot,遠当てブーツ,[R][Y][H],high
+Pull,引き,[L][T],high
+Circle Stance,円の構え,[H],high
+Circle Strike,円攻撃,[Y],high

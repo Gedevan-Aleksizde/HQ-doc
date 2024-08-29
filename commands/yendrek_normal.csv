@@ -1,20 +1,14 @@
-name_orig,name,command,mode
-Pull 1,引き寄せ1,[Y] [Y],normal
-Pull 2,引き寄せ2,[T] [T],normal 
-Pull 3,引き寄せ3,[H] [H], normal
-Pull 4,引き寄せ4,[G] [G], normal
-Pull 1 Attack,引き寄せ攻撃1,[Y][Y][Y],normal
-Pull 2 Attack,引き寄せ攻撃2,[T][T][T],normal
-Pull 3 Attack,引き寄せ攻撃3,[H][H][H],normal
-Pull 4 Attack,引き寄せ攻撃4,[G][G][G],normal
-Combo 1,,[R][Y][Y],normal
-Face Smash,,[R][T][H],normal
-Up is Down,,[D][R][G],normal
-Low Squat,スクワット,[D][L][G],normal
-Jump Attack,ジャンプ斬り,[R][R][Y],normal
-Surprise,,[L][L][G],normal
-Cocky Walk Kick,煽り歩きキック,[D][R][H],normal
-Kick Sooner,キック(煽り歩き中のみ)[H],normal
-Pendulum,ペンデュラム,[D][R][Y],normal
-Pendulum Chop High,ペンデュラム中のみ,[Y],normal
-Pendulum Chop Low,ペンデュラム中のみ,[G],normal
+"name_orig","name","command","mode"
+"Combo 1","コンボ1","[R][Y][Y]","normal"
+"Face Smash","顔面砕き","[R][T][H]","normal"
+"Up is Down","上下攻撃","[D][R][G]","normal"
+"Low Squat","スクワット攻撃","[D][L][G]","normal"
+"Jump Attack","ジャンプ斬り","[R][R][Y]","normal"
+"Surprise","サプライズ攻撃","[L][L][G]","normal"
+"Gut Cut","腹裂き","[R][Y][G]","normal"
+"Backstep Chop","後ずさりの一撃","[R][G][Y]","normal"
+"Cocky Walk Kick","煽り歩きキック","[D][R][H]","normal"
+"Kick Sooner","キック, 煽り歩き中のみ","[H]","normal"
+"Pendulum","ペンデュラム","[D][R][Y]","normal"
+"Pendulum Chop High","上段攻撃, ペンデュラム中のみ","[Y]","normal"
+"Pendulum Chop Low","下段攻撃, ペンデュラム中のみ","[G]","normal"

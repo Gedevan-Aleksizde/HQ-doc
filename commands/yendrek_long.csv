@@ -1,5 +1,6 @@
-name_orig,name,command,mode
-Halfcircle Strike,半回転攻撃,[Y],long
-Long Halfcircle Strike,遠距離半回転攻撃,[R][Y],long
-Circle Stance,円の構え,[H],long
-Circle Strike,円攻撃 (円の構え発動中に),[Y],long
+"name_orig","name","command","mode"
+"Halfcircle Strike","半回転攻撃","[Y]","long"
+"Long Halfcircle Strike","遠距離半回転攻撃","[R][Y]","long"
+"Circle Stance","円の構え","[H]","long"
+"Circle Strike","円攻撃, 円の構え中のみ","[Y]","long"
+"Pull","引き","[L][T]","long"
