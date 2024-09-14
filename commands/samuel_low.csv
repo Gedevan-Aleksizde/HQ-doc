@@ -1,5 +1,5 @@
-name_orig,name,command,mode
-podlev,右下から?,[G] or [H],low
-odlev,左から,[R] [T],low
-Trick Shot,,[T],low
-Retribution,,[Y],low
+"name_orig","name_jp","description","command","mode"
+"podlev","ポドレフ",,"[G] or [H]","low"
+"odlev","オドレフ",,"[R] [T]","low"
+"Trick Shot","トリックショット",,"[T]","low"
+"Retribution","斬り返し",,"[Y]","low"

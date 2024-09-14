@@ -1,19 +1,19 @@
-name_orig,name,command,mode
-Combo 1,コンボ1,[Y] [T],normal
-Combo 2,コンボ2,[T] [Y],normal
-Combo 3,コンボ3,[L] [Y] [T],normal
-Combo 4,コンボ4,[L] [T] [Y],normal
-Combo 5,コンボ5,[U] [Y] [T],normal
-Combo 6,コンボ6,[D] [G] [Y],normal
-Combo 7,コンボ7,[L] [Y] [G],normal
-Death March,,[Y] [Y],normal
-Static Feint (F),,[D] [R] [T],normal
-Nysh (F),ニジェク,[D] [R] [T],normal
-Liar (F),,[D] [L] [G],normal
-Lunge Cut,,[D] [L] [T],normal
-Vlitz,ヴリツ,[D] [L] [Y],normal
-Falling Cut,,[L] [L] [Y],normal
-Uppercut,,[L] [L] [H],normal
-Skyhook,,[D] [R] [H],normal
-Retract Leg,足引っ込め,(相手の下段攻撃に合わせて) + [L],normal
-Punish,下段攻撃へのカウンター,(足引っ込め成功時に) [T] or [H],normal
+"name_orig","name_jp","description","command","mode"
+"Combo 1","コンボ1",,"[Y] [T]","normal"
+"Combo 2","コンボ2",,"[T] [Y]","normal"
+"Combo 3","コンボ3",,"[L] [Y] [T]","normal"
+"Combo 4","コンボ4",,"[L] [T] [Y]","normal"
+"Combo 5","コンボ5",,"[U] [Y] [T]","normal"
+"Combo 6","コンボ6",,"[D] [G] [Y]","normal"
+"Combo 7","コンボ7",,"[L] [Y] [G]","normal"
+"Death March","デスマーチ",,"[Y] [Y]","normal"
+"Static Feint (F)","静かなフェイント",,"[D] [R] [T]","normal"
+"Nysh (F)","ニジェク",,"[D] [R] [T]","normal"
+"Liar (F)","偽り",,"[D] [L] [G]","normal"
+"Lunge Cut","斬撃フォント",,"[D] [L] [T]","normal"
+"Vlitz","ヴリツ",,"[D] [L] [Y]","normal"
+"Falling Cut","落下斬り",,"[L] [L] [Y]","normal"
+"Uppercut","斬り上げ",,"[L] [L] [H]","normal"
+"Skyhook","スカイフック",,"[D] [R] [H]","normal"
+"Retract Leg","足引っ込め",,"(相手の下段攻撃に合わせて) + [L]","normal"
+"Punish","下段攻撃へのカウンター",,"(足引っ込め成功時に) [T] or [H]","normal"

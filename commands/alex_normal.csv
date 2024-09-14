@@ -1,14 +1,14 @@
-name_orig,name,command,mode
-Combo 1,上段2連,[T] [Y],normal
-Combo 2,上段2連(左右逆),[Y] [T],normal
-Combo 3,上段2連, [R] [T] [Y],normal
-Combo 4,上段2連, [R] [Y] [T],normal
-Low attack,下段攻撃,[D] [R] [G],normal
-Jump Attack,飛び込んで攻撃, [L] [L] [T],normal
-Dodge Right Attack, ,[D] [D] [H], normal
-Dodge Left Attack, ,[U] [U] [Y], normal
-Feint Attack, ,[D] [L] [H], normal
-Short Whirl, ,[D] [R] [T], normal
-Sidestep Attack,サイドステップ攻撃, [D] [R] [Y]
-Retract Leg,足引っ込め,(相手の下段攻撃に合わせて) + [L],normal
-Punish,下段攻撃へのカウンター,(足引っ込め成功時に) [T] or [H],normal
+"name_orig","name_jp","description","command","mode"
+"Combo 1","上段2連",,"[T] [Y]","normal"
+"Combo 2","上段2連(左右逆)",,"[Y] [T]","normal"
+"Combo 3","上段2連",,"[R] [T] [Y]","normal"
+"Combo 4","上段2連",,"[R] [Y] [T]","normal"
+"Low attack","下段攻撃",,"[D] [R] [G]","normal"
+"Jump Attack","ジャンプ攻撃","飛び込んで攻撃","[L] [L] [T]","normal"
+"Dodge Right Attack","右ニ連撃",,"[D] [D] [H]","normal"
+"Dodge Left Attack","左ニ連撃",,"[U] [U] [Y]","normal"
+"Feint Attack","フェイント攻撃","フェイント効果はない","[D] [L] [H]","normal"
+"Short Whirl","短回転",,"[D] [R] [T]","normal"
+"Sidestep Attack","サイドステップ攻撃",,"[D] [R] [Y]","normal"
+"Retract Leg","足引っ込め",,"(相手の下段攻撃に合わせて) + [L]","normal"
+"Punish","罰","下段攻撃へのカウンター","(足引っ込め成功時に) [T] or [H]","normal"

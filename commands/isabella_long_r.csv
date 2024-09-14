@@ -1,5 +1,9 @@
-name_orig,name,command,mode,lr
-High Thrust,上段突き,[T],long,r
-Low Thrust,下段突き,[Y],long,r
-Spear,突き,[R] [T] or [R] [Y],long,r
-Thrust,,[U] [T],long,r
+"name_orig","name_jp","description","command","mode","lr"
+"High Thrust to Fenestra","上段突きからの『窓』",攻撃後にしばらく『窓の構え』の姿勢になる.,"[T]","long","r"
+"Fenestra to Cut","『窓』からの斬撃","上記のコマンド後に『窓の構え』になっている間しか発生しない","[T][T]","long","r"
+"Low Thrust","下段突き",,"[H]","long","r"
+"Spear","槍","突き攻撃","[R] [T] or [R] [Y]","long","r"
+"Thrust","突き",,"[U] [T]","long","r"
+"Spear Cut Left","槍からの左斬り",「槍」後に足を切り替えて後退しながら斬撃,"[R][T][T]","long","r"
+"Spear and Swing","槍からの振り",,"[R][T][Y]","long","r"
+"Go Around", "回り込み攻撃","","[U][T]","long","r"

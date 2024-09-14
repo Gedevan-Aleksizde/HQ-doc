@@ -1,15 +1,15 @@
-name_orig,name,command,mode,lr
-Combo 1,コンボ1,[Y] [T],normal,l
-Combo 2,コンボ2,[T] [Y],normal,l
-Combo 3,コンボ3,[T] [H],normal,l
-Combo 4,コンボ4,[H] [T],normal,l
-Repeater,リピーター,[R] [Y] [T],normal,l
-To Back up,バックアップ,[R] [T] [H],normal,l
-Up and Thrust,切り上げ中に突きに変化,[R] [H] [T],normal,l
-Top Repeater,,[R] [G] [Y],normal,l
-Sidestep Combo 1,横飛びコンボ1,[U] [H] [T],normal,l
-Sidestep Combo 2,横飛びコンボ2,[D] [H] [T],normal,l
-Backing Combo 1,後退コンボ1,[L] [Y] [T],normal,l
-Backing Combo 2,後退コンボ2,[L] [T] [H],normal,l
-Kee Stab,膝狙いの突き,[D] [R] [G],normal,l
-Leg Swipe,下段狙いの払い,[D] [R] [H],normal,l
+"name_orig","name_jp","description","command","mode","lr"
+"Combo 1","コンボ1",,"[Y] [T]","normal","l"
+"Combo 2","コンボ2",,"[T] [Y]","normal","l"
+"Combo 3","コンボ3",,"[T] [H]","normal","l"
+"Combo 4","コンボ4",,"[H] [T]","normal","l"
+"Repeater","リピーター",,"[R] [Y] [T]","normal","l"
+"To Back up","バックアップ",,"[R] [T] [H]","normal","l"
+"Up and Thrust","斬り突き","切り上げ中に突きに変化","[R] [H] [T]","normal","l"
+"Top Repeater","上段リピーター",,"[R] [G] [Y]","normal","l"
+"Sidestep Combo 1","横飛びコンボ1",,"[U] [H] [T]","normal","l"
+"Sidestep Combo 2","横飛びコンボ2",,"[D] [H] [T]","normal","l"
+"Backing Combo 1","後退コンボ1",,"[L] [Y] [T]","normal","l"
+"Backing Combo 2","後退コンボ2",,"[L] [T] [H]","normal","l"
+"Kee Stab","膝突き","膝狙いの突き","[D] [R] [G]","normal","l"
+"Leg Swipe","足払い","下段狙いの払い","[D] [R] [H]","normal","l"

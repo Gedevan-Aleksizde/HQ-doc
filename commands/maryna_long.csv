@@ -1,8 +1,8 @@
-name_orig,name,command,mode
-Shielded Swing,"守り斬り, 盾で殴るわけではない",[T],long
-Over The Shield,"盾の上, 手の下を守りつつ斬撃",[Y],long
-Under The Shield,"盾の下, 手元の上を守りつつ足払い",[H],long
-Sneaky Rib Cut,"卑劣な脇斬り, 奥に回り込みながら斬り上げ",[G],long
-To Goodbye,飛び退きながら斬撃,[L][T],long
-Flat Slash,"水平斬り, 動作が妙に遅い",[D][Y],long
-Leg Swipe,"足払い, 上を盾で守りつつ足払い",[D][H],long
+"name_orig","name_jp","description","command","mode"
+"Shielded Swing","守り斬り","盾で殴るわけではない","[T]","long"
+"Over The Shield","盾の上","手の下を守りつつ斬撃","[Y]","long"
+"Under The Shield","盾の下","手元の上を守りつつ足払い","[H]","long"
+"Sneaky Rib Cut","卑劣な脇斬り","奥に回り込みながら斬り上げ","[G]","long"
+"To Goodbye","別れの挨拶","飛び退きながら斬撃","[L][T]","long"
+"Flat Slash","水平斬り","動作が妙に遅い","[D][Y]","long"
+"Leg Swipe","足払い","上を盾で守りつつ足払い","[D][H]","long"

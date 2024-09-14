@@ -1,16 +1,22 @@
-name_orig,name,command,mode,lr
-Combo 1,上段左右,[Y] [T],normal,NA
-Combo 2,上段右左,[T] [Y],normal,NA
-Combo 3,下段上段,[G] [Y],normal,NA
-Combo 4,"上段下段",[Y] [G],normal,NA
-Combo 5,上段下段,[T] [H],normal,NA
-Combo 6,下段2連,[H] [H],normal,NA
-Belly Thrust,中段突き,[R] [R] [G],normal,NA
-Wrist Hinge,前腕の出の速い斬り,[R] [Y] [T],normal,NA
-Up and Thrust,斬り上げから突き,[R] [H] [G],normal,NA
-Snap Cut,出の速い斬撃,[D] [R] [Y],normal,NA
-Low Swipe,下段斬り払い,[D] [R] [G],normal,NA
-False Edge Uppercut,変則的な斬り上げ,[D] [D] [H],normal,NA
-Headgames,斬り下ろしフェイントからの攻撃,[D] [L] [T],normal,NA
-Retract Leg,足引っ込め,(相手の下段攻撃に合わせて) + [L],normal
-Punish,下段攻撃へのカウンター,(足引っ込め成功時に) [T] or [H],normal
+"name_orig","name_jp","description","command","mode","lr"
+"Combo 1","コンボ1","上段左右","[Y] [T]","normal","NA"
+"Combo 2","コンボ2","上段右左","[T] [Y]","normal","NA"
+"Combo 3","コンボ3","下段上段","[G] [Y]","normal","NA"
+"Combo 4","コンボ4","上段下段","[Y] [G]","normal","NA"
+"Combo 5","コンボ5","上段下段","[T] [H]","normal","NA"
+"Combo 6","コンボ6","下段2連","[H] [H]","normal","NA"
+"Belly Thrust","腹突き","中段突き","[R] [R] [G]","normal","NA"
+"Wrist Hinge","小手返し斬り","前腕をひねった速い連続攻撃","[R] [Y] [T]","normal","NA"
+"Up and Thrust","斬り突き","斬り上げから突き","[R] [H] [G]","normal","NA"
+"From The Top","上から",,"[R][H][Y]","normal","NA"
+"Far Rib Cut","遠脇払い","リーチの長い中段水平斬り, 後退ボタンを押すがむしろ前進する","[D][L][G]","normal",
+"Leg Swipe","足払い","すねの高さを狙った切り払い","[D][R][G]","normal",
+"Left Sidestep Combo","左踏み込みコンボ",,"[U][Y][T]","normal",
+"Right Sidestep Combo","右踏み込みコンボ",,"[D][T][Y]","normal",
+"Snap Cut","小手斬り","小手先だけを使った出の速い斬撃","[D] [R] [Y]","normal","NA"
+"Comeback","折り返し攻撃","後退しながら1撃目, 2撃目で突き返す","[L][Y][Y]","normal",
+"Low Swipe","下段払い","下段の広範囲の斬り払い","[D] [R] [G]","normal","NA"
+"False Edge Uppercut","裏刃斬り上げ","変則的な斬り上げ, 2024.8.30以降使えないのはバグ?","[D] [D] [H]","normal","NA"
+"Headgames","首狩り","斬り下ろしフェイントからの攻撃","[D] [L] [T]","normal","NA"
+"Retract Leg","足引っ込め","足引っ込め","(相手の下段攻撃に合わせて) + [L]","normal",
+"Punish","罰","下段攻撃へのカウンター","(足引っ込め成功時に) [T] or [H]","normal",

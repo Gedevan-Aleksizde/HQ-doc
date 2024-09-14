@@ -1,3 +1,7 @@
-name_orig,name,command,mode
-Lunge,突き,[Y] or [T],long
-Push Down Weapon,剣を弾く,[H] or [G],long
+"name_orig","name_jp","description","command","mode"
+"Lunge","フォント","予備動作が少なく読みづらい突き","[R][Y]","long"
+"Top Chop","上段割り","斬り下ろし","[Y]","long"
+"Long Wrist Cut","遠小手斬り","大きく踏み込んで前腕を使った斬撃","[T]","long"
+"Low Wrist Cut","下段小手斬り","遠小手斬りより低い","[R][G]","long"
+"Left Detour","左迂回攻撃","回り込みながら斬撃","[G]","long"
+"Right Detour","右迂回攻撃","2024.9.13時点ではフォントが発生する. バグ?","[H]","long"

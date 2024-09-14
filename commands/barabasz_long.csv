@@ -1,6 +1,7 @@
-name_orig,name,command,mode
-Chop,切り下ろし,[Y], long
-Trickshot,トリックショット,[T], long
-Cutthroat,喉元への突き,[R] [Y], long
-Side Cut,右に避けつつ攻撃,[D] [H], long
-Wrist Roundcut,手首のスナップで斬撃,[U] [Y], long
+"name_orig","name_jp","description","command","mode"
+"Chop","切断","切り下ろし","[Y]"," long"
+"Trickshot","トリックショット",,"[T]"," long"
+"Cutthroat","喉裂き","喉元への突き","[R] [Y]"," long"
+"Side Cut","側面斬り","右に避けつつ攻撃","[D] [H]"," long"
+"Wrist Roundcut","小手回し斬り","手首のスナップで斬撃","[U] [Y]"," long"
+"Squat","スクワット","しゃがんで足元を払う","[G]","long"

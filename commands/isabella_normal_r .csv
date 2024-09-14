@@ -1,16 +1,16 @@
-name_orig,name,command,mode,lr
-Combo 1,コンボ1,[G] [Y],normal,r
-Combo 2,コンボ2,[Y] [T],normal,r
-Combo 3,コンボ3,[H] [T],normal,r
-Combo 4,コンボ4,[T] [H],normal,r
-Combo 5,コンボ5, [R] [G] [Y],normal,r
-"One, two 1","ワンツーその1","[R] [T] [Y]","normal","r"
-"One, two 2","ワンツーその2","[R] [Y] [T]","normal","r"
-Repeater,リピーター,[R] [Y] [Y],normal,r
-Snap Cut,スナップカット,[D] [R] [Y],normal,r
-Dash Attack,ダッシュ斬り,[R] [R] [Y],normal,r
-Sidestep Combo 1,"右に避けつつ2連,2回目はやや速い?",[D] [G] [Y],normal,r
-Sidestep Combo 2,"右に避けつつ2連,反転バージョン", [D]  [H] [T],normal,r
-False Edge Backwards,"斬り下ろし,速い斬り返し",[L] [T] [H],normal,r
-Posta di Donna, 『貴婦人』の構え,[D][L][T],normal,r
-Switch Stance,足の左右をその場で切り替える,[U]+[H],normal,r
+"name_orig","name_jp","description","command","mode","lr"
+"Combo 1","コンボ1",,"[G] [Y]","normal","r"
+"Combo 2","コンボ2",,"[Y] [T]","normal","r"
+"Combo 3","コンボ3",,"[H] [T]","normal","r"
+"Combo 4","コンボ4",,"[T] [H]","normal","r"
+"Combo 5","コンボ5",,"[R] [G] [Y]","normal","r"
+"One, two 1","ワンツーその1",,"[R] [T] [Y]","normal","r"
+"One, two 2","ワンツーその2",,"[R] [Y] [T]","normal","r"
+"Repeater","リピーター",,"[R] [Y] [Y]","normal","r"
+"Snap Cut","スナップカット",,"[D] [R] [Y]","normal","r"
+"Dash Attack","ダッシュ斬り",,"[R] [R] [Y]","normal","r"
+"Sidestep Combo 1","横跳び攻撃コンボ1","右に避けつつ2連,2回目はやや速い?","[D] [G] [Y]","normal","r"
+"Sidestep Combo 2","横跳び攻撃コンボ2","右に避けつつ2連,反転バージョン","[D]  [H] [T]","normal","r"
+"False Edge Backwards","裏刃戻し","斬り下ろしから速い斬り返し","[L] [T] [H]","normal","r"
+"Posta di Donna"," 『貴婦人』の構え",,"[D][L][T]","normal","r"
+"Switch Stance","構えの切り替え","足の左右をその場で切り替える","[U]+[H]","normal","r"

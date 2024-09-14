@@ -1,5 +1,5 @@
-name_orig,name,command,mode,lr
-Circle Slice,円切断,[T],high,r
-Complete the Circle,完全切断円,[T] [G],high,r
-Left Cut,左斬り,[G],high,r
-Right Cut,右斬り,[H],high,r
+name_orig,name_jp,description,command,mode,lr
+Circle Slice,円切断,,[T],high,r
+Complete the Circle,完全切断円,,[T] [G],high,r
+Left Cut,左斬り,,[G],high,r
+Right Cut,右斬り,,[H],high,r

@@ -1,5 +1,4 @@
-name_orig,name,command,mode,lr
-Thrust ,突き,[Y] or [T],high,r
-Push Down Weapon,剣を弾く,[H] or [G],long,r
-Roof Guard,『屋根』の構えへ移行,[D] [R],long,r
-Fool's Guard,『愚者』の構えへ移行,[D] [L],long,r
+"name_orig","name_jp","description","command","mode","lr"
+"Thrust ","突き",,"[Y] or [T]","high","r"
+"Roof Guard","『屋根』の構えへ移行",,"[D] [R]","long","r"
+"Fool's Guard","『愚者』の構えへ移行",,"[D] [L]","long","r"

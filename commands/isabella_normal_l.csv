@@ -1,14 +1,14 @@
-name_orig,name,command,mode,lr
-Combo 1,コンボ1,[Y] [T], normal,l
-Combo 2,コンボ2,[T] [Y], normal,l
-Combo 3,コンボ3,[H] [T],normal,l
-Combo 4,コンボ4,[T] [H],normal,l
-Combo 5,コンボ5,[G] [Y],normal,l
-"One, Two 1",ワンツーその1,[R] [Y] [T],normal,l
-"One, Two 2",ワンツーその2,[R] [T] [Y],normal,l
-False Edge Comeback,斬り下ろしてすぐ斬り上げ,[R] [T] [H],normal,l
-Up and thrust,斬り上げてすぐ突き,[R] [H] [T],normal,l
-Dash Attack,ダッシュ斬り,[R] [R] [Y],normal,l
-Sidestep Combo 1,"右に避けつつ2連,2回目はやや速い?",[D] [G] [Y],normal,l
-Posta di Donna, 『貴婦人』の構え,[D][L][T],normal,l
-Switch Stance,足の左右をその場で切り替える,[U]+[H],normal,l
+"name_orig","name_jp","description","command","mode","lr"
+"Combo 1","コンボ1",,"[Y] [T]"," normal","l"
+"Combo 2","コンボ2",,"[T] [Y]"," normal","l"
+"Combo 3","コンボ3",,"[H] [T]","normal","l"
+"Combo 4","コンボ4",,"[T] [H]","normal","l"
+"Combo 5","コンボ5",,"[G] [Y]","normal","l"
+"One, Two 1","ワンツーその1",,"[R] [Y] [T]","normal","l"
+"One, Two 2","ワンツーその2",,"[R] [T] [Y]","normal","l"
+"False Edge Comeback","裏刃返し","斬り下ろしてすぐ斬り上げ","[R] [T] [H]","normal","l"
+"Up and thrust","上段と突き","斬り上げてすぐ突き","[R] [H] [T]","normal","l"
+"Dash Attack","ダッシュ斬り",,"[R] [R] [Y]","normal","l"
+"Sidestep Combo 1","横跳び攻撃コンボ1","右に避けつつ2連,2回目はやや速い?","[D] [G] [Y]","normal","l"
+"Posta di Donna"," 『貴婦人』の構え",,"[D][L][T]","normal","l"
+"Switch Stance","構えの切り替え","足の左右をその場で切り替える","[U]+[H]","normal","l"

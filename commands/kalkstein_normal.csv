@@ -1,17 +1,17 @@
-name_orig,name,command,mode
-Combo 1,左右の切り下ろし,[Y] [T],normal
-Combo 2,上下に振る,[Y] [G],normal
-Combo 3,左右の切り下ろし,[T] [Y],normal
-Combo 4,2撃目は突き,[T] [H],normal
-Combo 5,2撃目は突き,[G] [Y],normal
-Combo 6,2撃目は突き,[H] [T],normal
-Combo 7,上上下,[Y] [T] [H],normal
-"Cutting and Stabbing","斬撃, 突き",[R] [Y] [T],normal
-Double Down, 切り下ろし2連,[R] [T] [Y],normal
-Con Man,"切り上げ, 切り返し",[R] [H] [T],normal
-Prepper,"溜めを挟んで突き",[R] [G] [Y],normal
-Ripper,Con Man の左右逆?,[R] [T] [H],normal
-Other Cheek,顔面狙いの切り下ろし2連,[L] [Y] [T],normal
-Followup,ポアント・アン・リニュ+斬撃,[L] [T] [Y],normal
-Impale,下がりつつ突き+斬撃,[L] [H] [T],normal
-Far Lunge,突進からの突き,[R] [R] [T],normal
+"name_orig","name_jp","description","command","mode"
+"Combo 1","コンボ1","左右の切り下ろし","[Y] [T]","normal"
+"Combo 2","コンボ2","上下に振る","[Y] [G]","normal"
+"Combo 3","コンボ3","左右の切り下ろし","[T] [Y]","normal"
+"Combo 4","コンボ4","2撃目は突き","[T] [H]","normal"
+"Combo 5","コンボ5","2撃目は突き","[G] [Y]","normal"
+"Combo 6","コンボ6","2撃目は突き","[H] [T]","normal"
+"Combo 7","コンボ7","上上下","[Y] [T] [H]","normal"
+"Cutting and Stabbing","斬撃と突き刺し","斬撃, 突き","[R] [Y] [T]","normal"
+"Double Down","二重斬り下ろし"," 切り下ろし2連","[R] [T] [Y]","normal"
+"Con Man","コン・マン","切り上げ, 切り返し","[R] [H] [T]","normal"
+"Prepper","プレッパー","溜めを挟んで突き","[R] [G] [Y]","normal"
+"Ripper","リッパー","Con Man の左右逆?","[R] [T] [H]","normal"
+"Other Cheek","もう一方の頬も","顔面狙いの切り下ろし2連","[L] [Y] [T]","normal"
+"Followup","フォローアップ","ポアント・アン・リニュ+斬撃","[L] [T] [Y]","normal"
+"Impale","インペイル","下がりつつ突き+斬撃","[L] [H] [T]","normal"
+"Far Lunge","長いフォント","突進からの突き","[R] [R] [T]","normal"

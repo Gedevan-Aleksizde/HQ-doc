@@ -1,9 +1,9 @@
-name_orig,name,command,mode
-High Guard,上段構えに切替,[D] [R],long
-Low Guard,下段構えに切替, [D] [L], long
-Thrust,突き,[Y],long
-Lunge,踏み込んで突き,[R] [Y],long
-Double Lunge,踏み込んで二連突き, [R] [Y] [T],long
-Circle,, [Y],long
-Circle to Lunge,, [Y] [T],long
-Offhand Parry,左手で払いつつ攻撃, [R] [T],long
+"name_orig","name_jp","description","command","mode"
+"High Guard","上段","上段構えに切替","[D] [R]","long"
+"Low Guard","下段","下段構えに切替"," [D] [L]"," long"
+"Thrust","突き","突き","[Y]","long"
+"Lunge","フォント","踏み込んで突き","[R] [Y]","long"
+"Double Lunge","ニ連フォント","フォントの後にさらにフォント,フォント後に2発目の攻撃ボタンを押すと良い"," [R] [Y] [T]","long"
+"Circle","サークル",剣先で円月殺法," [Y]","long"
+"Circle to Lunge","サークルフォント",2つ目の攻撃ボタンはサークルの動作の終わり頃に押すと良い," [Y] [T]","long"
+"Offhand Parry","左手パリィ","左手で払いつつ攻撃"," [R] [T]","long"

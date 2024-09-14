@@ -1,12 +1,16 @@
-name_orig,name,command,mode
-Combo 1,右斬り上げ・斬り下ろし,[H] [T],normal
-Combo 2,左斬り上げ・斬り下ろし,[G] [Y],normal
-Belly to Leg,中段・下段,[R] [H] [G],normal
-Whirl,頭上で剣を振り回す,[R] [Y] [Y],normal
-"One, Two, One",斬り下ろし3連撃,[R] [Y] [T] [Y],normal
-"One, Two, Three",斬り下ろし2連+斬り上げ,[R] [Y] [T] [H],normal
-Jump Thrust,ジャンプ突き,[R] [R] [Y],normal
-Trickster,左に避けつつ時間差攻撃,[U][U] [T],normal
-Hulay-hey! (F), 1打目はフェイント,[R][R] [T],normal
-Snap Cut,手首を使った出の速い攻撃,[D][R] [Y],normal
-Bender,上体を少し逸してから横に斬りつける,[D] [R] [T],normal
+"name_orig","name_jp","description","command","mode"
+"Combo 1","コンボ1","右斬り上げ・斬り下ろし","[H] [T]","normal"
+"Combo 2","コンボ2","左斬り上げ・斬り下ろし","[G] [Y]","normal"
+"Belly to Leg","腹から足へ","中段・下段","[R] [H] [G]","normal"
+"Whirl","旋風","頭上で剣を振り回す","[R] [Y] [Y]","normal"
+"One, Two, One","一、二、一","斬り下ろし3連撃","[R] [Y] [T] [Y]","normal"
+"One, Two, Three","一、二、三","斬り下ろし2連+斬り上げ","[R] [Y] [T] [H]","normal"
+"Jump Thrust","ジャンプ突き","ジャンプ突き","[R] [R] [Y]","normal"
+"Trickster","トリックスター","左に避けつつ時間差攻撃","[U][U] [T]","normal"
+"Hulay-hey! (F)","フレーヘイ!"," 1打目はフェイント","[R][R] [T]","normal"
+"Snap Cut","手首斬り","手首を使った出の速い攻撃","[D][R] [Y]","normal"
+"Bender","折り曲げ","上体を少し逸してから横に斬りつける","[D] [R] [T]","normal"
+"Lash Out","強打","下がってから振り下ろし","[D][R][Y]","normal"
+"Belly Lunge","中段フォント","","[D][R][H]","normal"
+"Leg Cut","足斬り","","[D][L][H]","normal"
+"Cherry On Top","駄目押しの一撃"."攻撃に間がある","[D][G][Y]","normal

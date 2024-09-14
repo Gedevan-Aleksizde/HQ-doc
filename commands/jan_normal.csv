@@ -1,15 +1,15 @@
-name_orig,name,command,mode
-Combo 1,"右斬り上げ, 斬り下ろし",[H] [T],normal
-Combo 2,"左斬り上げ, 斬り下ろし",[G] [Y],normal
-Belly to Leg,"中段, 下段",[R] [H] [G],normal
-Whirl,頭上で剣を振り回す,[R] [Y] [Y],normal
-"One, Two, One",斬り下ろし3連,[R] [Y] [T] [Y],normal
-"One, Two, Three",斬り下ろし2連+斬り上げ,[R] [Y] [T] [H],normal
-Leg Lunge,下段突き,[R] [R] [H],normal
-Spear,突き,[R] [R] [Y],normal
-Feint Sidestep,横飛びしつつ時間差攻撃,[U] [U] [T],normal
-Belly Lunge,中段突き,[D] [R] [H],normal
-Stab,剣を1回転して斬り,[D] [R] [Y],normal
-Revenge,一歩下がって突き返し,[D] [R] [T],normal
-Retract Leg,足引っ込め,(相手の下段攻撃に合わせて) + [L],normal
-Punish,下段攻撃へのカウンター,(足引っ込め成功時に) [T] or [H],normal
+"name_orig","name_jp","description","command","mode"
+"Combo 1","コンボ1","右斬り上げ, 斬り下ろし","[H] [T]","normal"
+"Combo 2","コンボ2","左斬り上げ, 斬り下ろし","[G] [Y]","normal"
+"Belly to Leg","腹から足へ","中段, 下段","[R] [H] [G]","normal"
+"Whirl","渦","頭上で剣を振り回す","[R] [Y] [Y]","normal"
+"One, Two, One","一、二、一","斬り下ろし3連","[R] [Y] [T] [Y]","normal"
+"One, Two, Three","一、二、三","斬り下ろし2連+斬り上げ","[R] [Y] [T] [H]","normal"
+"Leg Lunge","足へのフォント","下段突き","[R] [R] [H]","normal"
+"Spear","槍","突き","[R] [R] [Y]","normal"
+"Feint Sidestep","フェイント横跳び","横飛びしつつ時間差攻撃","[U] [U] [T]","normal"
+"Belly Lunge","中段フォント","中段突き","[D] [R] [H]","normal"
+"Stab","突き刺し","剣を1回転して斬り","[D] [R] [Y]","normal"
+"Revenge","逆襲","一歩下がって突き返し","[D] [R] [T]","normal"
+"Retract Leg","足を引っ込める",,"(相手の下段攻撃に合わせて) + [L]","normal"
+"Punish","罰","下段攻撃へのカウンター","(足引っ込め成功時に) [T] or [H]","normal"

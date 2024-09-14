@@ -1,13 +1,13 @@
-name_orig,name,command,mode
-"From The Top",,[T] [T],normal
-"Tip Toe", "", "[R] [R] [G]", normal
-"Sidestep Thrust", "", "[D] [R] [H]", normal
-"Countertime", "コントルタン", "[D] [R] [Y]", normal
-"Low Down", "", "[D] [R] [G]", normal
-"Ole!", "", "[D] [L] [T]", normal
-"Fast Cut",,[D][R][T],normal
-"True Lunge", "", "[R] [R] [Y]", normal
-"Feint 1","フェイント攻撃1", "[R] [Y] [T]", normal
-"Feint 2", "フェイント攻撃2", "[R] [T] [Y]", normal
-"Feint left", "フェイント攻撃左", "[U] [Y] [Y]"", normal
-"Combo 1", "コンボ1", "[R] [Y] [G]", normal
+"name_orig","name_jp","description","command","mode"
+"From The Top","上から",,"[T] [T]","normal"
+"Tip Toe","ティップ・トゥ",,"[R] [R] [G]","normal"
+"Sidestep Thrust","横跳び突き",,"[D] [R] [H]","normal"
+"Countertime","コントルタン",,"[D] [R] [Y]","normal"
+"Low Down",,,"[D] [R] [G]","normal"
+"Ole!","オレ!",,"[D] [L] [T]","normal"
+"Fast Cut","高速斬り",,"[D][R][T]","normal"
+"True Lunge","本命のフォント",,"[R] [R] [Y]","normal"
+"Feint 1","フェイント攻撃1",,"[R] [Y] [T]","normal"
+"Feint 2","フェイント攻撃2",,"[R] [T] [Y]","normal"
+"Feint left","フェイント攻撃左",,"[U] [Y] [Y]","normal"
+"Combo 1","コンボ1",,"[R] [Y] [G]","normal"

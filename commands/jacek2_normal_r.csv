@@ -1,19 +1,19 @@
-name_orig,name,command,mode,lr
-Hand Cutter,手斬り,[T] [T],normal,r
-Slice!,切断!,[G] [T] [Y],normal,r
-Spring Back,跳ね返り,[T] [Y],normal,r
-Double Spring,二重跳ね返り,[Y] [Y],normal,r
-Side Cuts,サイドカット,[G] [H],normal,r
-Side to Knee,膝から膝まで,[R] [G] [H],normal,r
-Knock Two Times,ノックは2回,[R] [Y] [Y],normal,r
-Long Hand Cutter,遠手斬り,[R] [T] [T],normal,r
-Split The Forhead,額割り,[R] [T] [Y],normal,r
-Cross Cutting,十字斬り,[R] [Y] [T],normal,r
-Gutter,溝,[R] [Y] [G],normal,r
-Cross for the Road,道を交差,[U] [Y] [T],normal,r
-To The Knee,膝へ,[D] [R] [H],normal,r
-Duck!,アヒル!,[D] [L] [G],normal,r
-Snapcut,手首斬り,[D] [R] [Y],normal,r
-Double Snapcut,ニ連手首斬り,[D] [R] [Y] [Y],normal,r
-Distance Trap,距離の罠,[D] [L] [T],normal,r
-Flèche,フレッシュ,[R] [R] [T],normal,r
+"name_orig","name_jp","description","command","mode","lr"
+"Hand Cutter","手斬り",,"[T] [T]","normal","r"
+"Slice!","切断!",,"[G] [T] [Y]","normal","r"
+"Spring Back","跳ね返り",,"[T] [Y]","normal","r"
+"Double Spring","二重跳ね返り",,"[Y] [Y]","normal","r"
+"Side Cuts","サイドカット",,"[G] [H]","normal","r"
+"Side to Knee","膝から膝まで",,"[R] [G] [H]","normal","r"
+"Knock Two Times","ノックは2回",,"[R] [Y] [Y]","normal","r"
+"Long Hand Cutter","遠手斬り",,"[R] [T] [T]","normal","r"
+"Split The Forhead","額割り",,"[R] [T] [Y]","normal","r"
+"Cross Cutting","十字斬り",,"[R] [Y] [T]","normal","r"
+"Gutter","溝",,"[R] [Y] [G]","normal","r"
+"Cross for the Road","道を交差",,"[U] [Y] [T]","normal","r"
+"To The Knee","膝へ",,"[D] [R] [H]","normal","r"
+"Duck!","アヒル!",,"[D] [L] [G]","normal","r"
+"Snapcut","手首斬り",,"[D] [R] [Y]","normal","r"
+"Double Snapcut","ニ連手首斬り",,"[D] [R] [Y] [Y]","normal","r"
+"Distance Trap","距離の罠",,"[D] [L] [T]","normal","r"
+"Flèche","フレッシュ",,"[R] [R] [T]","normal","r"

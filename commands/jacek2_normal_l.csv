@@ -1,14 +1,14 @@
-name_orig,name,command,mode,lr
-Krank,クランク,[Y] [Y],normal,l
-Other Cheek,もう一方の頬も,[Y] [T],normal,l
-Catch Up,追いつき,[Y] [R] [T],normal,l
-Turkish Cut,ターキッシュカット,[T] [H],normal,l
-Sawmill,ノコギリ,[R] [T] [T],normal,l
-B Plan=,プランB,[R] [Y] [Y],normal,l
-Hats Off!,脱帽!,[R] [T] [Y],normal,l
-Double Crosser,二重十字,[R] [Y] [T],normal,l
-Hidden Thrust,隠し突き,[R] [H] [T],normal,l
-Get Away!,失せろ!,[L] [Y] [T],normal,l
-Sidestep Combo,脇踏み込みコンボ,[U] [Y] [T],normal,l
-Running Attack,飛び込み攻撃,[R] [R] [Y],normal,l
-Run and Low Attack,飛び込み下段,[R] [R] [G],normal,l
+"name_orig","name_jp","description","command","mode","lr"
+"Krank","クランク",,"[Y] [Y]","normal","l"
+"Other Cheek","もう一方の頬も",,"[Y] [T]","normal","l"
+"Catch Up","追いつき",,"[Y] [R] [T]","normal","l"
+"Turkish Cut","ターキッシュカット",,"[T] [H]","normal","l"
+"Sawmill","ノコギリ",,"[R] [T] [T]","normal","l"
+"B Plan","プランB",,"[R] [Y] [Y]","normal","l"
+"Hats Off!","脱帽!",,"[R] [T] [Y]","normal","l"
+"Double Crosser","二重十字",,"[R] [Y] [T]","normal","l"
+"Hidden Thrust","隠し突き",,"[R] [H] [T]","normal","l"
+"Get Away!","失せろ!",,"[L] [Y] [T]","normal","l"
+"Sidestep Combo","脇踏み込みコンボ",,"[U] [Y] [T]","normal","l"
+"Running Attack","飛び込み攻撃",,"[R] [R] [Y]","normal","l"
+"Run and Low Attack","飛び込み下段",,"[R] [R] [G]","normal","l"

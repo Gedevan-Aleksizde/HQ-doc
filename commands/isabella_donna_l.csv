@@ -1,4 +1,4 @@
-name_orig,name,command,mode,lr
-Heavy Attack,,[Y],donna,l
-Thrust,,[G],donna,l
-Cancel,構えを解く,[R],donna,l
+"name_orig","name_jp","description","command","mode","lr"
+"Heavy Attack","重い一撃",,"[Y]","donna","l"
+"Thrust","突き",,"[G]","donna","l"
+"Cancel","構えを解く","","[R]","donna","l"

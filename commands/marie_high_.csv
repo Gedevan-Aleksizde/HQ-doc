@@ -1,5 +1,5 @@
-name_orig,name,command,mode
-High Thrust,斬り払い,[Y],high
-Downwards Cut,斬り下ろし,[T],high
-Leg Swipce,足払い,[H],high
-Side Cut,横から切りつけ, [G],high
+"name_orig","name_jp","description","command","mode"
+"High Thrust","上段突き",,"[Y]","high"
+"Downwards Cut","下段斬り","斬り下ろし","[T]","high"
+"Leg Swipce","足払い",,"[H]","high"
+"Side Cut","側面斬り","横から切りつけ"," [G]","high"

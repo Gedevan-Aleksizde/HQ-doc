@@ -1,6 +1,6 @@
-name_orig,name,command,mode
-Vbrev,ヴブレフ,[Y],high
-Vremb,ヴロンプ,[L] [Y],high
-Sidestep Cut,,[T],high
-Right Low Cut,,[H],high
-Left Low Cut,,[G],high
+"name_orig","name_jp","description","command","mode"
+"Vbrev","ヴブレフ",,"[Y]","high"
+"Vremb","ヴロンプ",,"[L] [Y]","high"
+"Sidestep Cut","横跳び斬り",,"[T]","high"
+"Right Low Cut","右下段斬り",,"[H]","high"
+"Left Low Cut","左下段斬り",,"[G]","high"

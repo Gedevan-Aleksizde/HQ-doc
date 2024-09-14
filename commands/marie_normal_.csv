@@ -1,12 +1,12 @@
-name_orig, name, command, mode
-Combo 1,2撃目は突き,[Y] [Y],normal
-Combo 2,Combo 1 + 斬撃,[Y] [Y] [T],normal
-Combo 3,コンボ3, [T] [T], normal
-Cpmbo 4,コンボ4, [H] [H], normal
-All in,ダッシュ攻撃, [R] [R] [G],normal
-Leg Swipe,下段払い, [D] [R] [H],normal
-Countertime,コントルタン, [D] [R] [Y], normal
-Down Low,予備動作の大きい下段突き,[D] [R] [G],normal
-Triangle,体を沈めて突き,[D] [L] [T],normal
-Fake Lunge,フェイントを入れた突進攻撃,[R] [R] [Y],normal
-Broom,左右に切り払う,[L] [G] [H],normal
+"name_orig","name_jp","description"," command"," mode"
+"Combo 1","コンボ1","2撃目は突き","[Y] [Y]","normal"
+"Combo 2","コンボ2","Combo 1 + 斬撃","[Y] [Y] [T]","normal"
+"Combo 3","コンボ3","コンボ3"," [T] [T]"," normal"
+"Cpmbo 4","コンボ4","コンボ4"," [H] [H]"," normal"
+"All in","オールイン","ダッシュ攻撃"," [R] [R] [G]","normal"
+"Leg Swipe","足払い","下段払い"," [D] [R] [H]","normal"
+"Countertime","コントルタン","いわゆる countre temps"," [D] [R] [Y]"," normal"
+"Down Low","下攻撃","予備動作の大きい下段突き","[D] [R] [G]","normal"
+"Triangle","三角攻撃","体を沈めて突き","[D] [L] [T]","normal"
+"Fake Lunge","フェイントフォント","フェイントを入れた突進攻撃","[R] [R] [Y]","normal"
+"Broom","掃除","左右に切り払う","[L] [G] [H]","normal"

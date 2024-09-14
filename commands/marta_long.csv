@@ -1,10 +1,10 @@
-name_orig,name,command,mode
-"Lunge", "フォント", "[T], long
-"Lunge to Cut",フォント+斬り, [T] [T],long
-"Clockwork", , [R] [Y], long
-"Top Chop", , [R] [Y] [T], long
-"Go Under", , [H], long
-"Takeaway", , [D] [Y], long
-"Redirect", , "[H] [T]", long
-"Side Stab", "側面突き", "[U] [T]", long
-"Side Cut", "側面斬り", "[U] [G]", long
+"name_orig","name_jp","description","command","mode"
+"Lunge","フォント","フォント","[T]","long"
+"Lunge to Cut","フォント斬り","フォント後に斬撃"," [T] [T]","long"
+"Clockwork","時計じかけ"," "," [R] [Y]"," long"
+"Top Chop","上段割り"," "," [R] [Y] [T]"," long"
+"Go Under","下へ"," "," [H]"," long"
+"Takeaway","テイクアウェイ"," "," [D] [Y]"," long"
+"Redirect","リダイレクト"," ","[H] [T]"," long"
+"Side Stab","側面突き",,"[U] [T]"," long"
+"Side Cut","側面斬り",,"[U] [G]"," long"

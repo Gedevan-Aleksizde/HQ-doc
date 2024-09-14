@@ -1,3 +1,2 @@
-name_orig,name,command,mode,lr
-Delayed Cut,時間差攻撃,[Y],long,r
-Push Down Weapon,剣を弾く,[H] or [G], long
+"name_orig","name_jp","description","command","mode","lr"
+"Delayed Cut","遅延攻撃","時間差攻撃","[Y]","long","r"

@@ -1,7 +1,6 @@
-name_orig,name,command,mode,lr
-Push And Cut Right,右プッシュアンドカット,[Y],long,r
-Tap the Blade,刃を叩く,[T],long,r
-Tap and Punish,剣叩きと罰,[T] [T],long,r
-Punish More!,もう一罰!,[T] [T] [H],long,r
-Push And Cut Left,左押し斬り,[R] [T],long,r
-Thrust,突き,[R] [Y],long,r
+"name_orig","name_jp","description","command","mode","lr"
+"Push And Cut Right","右プッシュアンドカット",,"[Y]","long","r"
+"Tap and Punish","剣叩きと罰",,"[T] [T]","long","r"
+"Punish More!","もう一罰!",,"[T] [T] [H]","long","r"
+"Push And Cut Left","左押し斬り",,"[R] [T]","long","r"
+"Thrust","突き",,"[R] [Y]","long","r"
