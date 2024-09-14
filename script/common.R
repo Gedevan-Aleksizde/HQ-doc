@@ -115,11 +115,13 @@ replace_keys <- function(text, dir = "../../../../img/xbox"){
 }
 
 to_table <- function(d, is_lr = F, dir = "../../../../img/xbox"){
-  t <- d %>% mutate(
-    name = paste(name_orig, paste0("<br>(", name, ")")),
-    mode = factor(mode, levels = MODE_LEVELS)
-  ) %>%
-    dplyr::select(-name_orig)
+  t <- d %>%
+    mutate(
+      name = paste(name_orig, paste0("<br>(", name_jp, ")")),
+      mode = factor(mode, levels = MODE_LEVELS),
+      description = coalesce(description, "")
+    ) %>%
+    dplyr::select(-name_orig, -name_jp)
   is_lr <- if(is.na(is_lr)) F else is_lr
   if(is_lr){
     t_bothsides <- t %>% filter(is.na(lr) | lr== "lr")
@@ -131,14 +133,16 @@ to_table <- function(d, is_lr = F, dir = "../../../../img/xbox"){
     t <- t %>% mutate(
       common = is.na(lr),
       lr = if_else(common, "l", lr)) %>%
-      pivot_wider(id_cols = c(mode, name, common), names_from = lr, values_from = command) %>%
+      pivot_wider(id_cols = c(mode, name, description, common), names_from = lr, values_from = command) %>%
       mutate(
         l = if_else(is.na(l), BLANK_SYMBOL, l),
         r = if_else(common, "", if_else(is.na(r), BLANK_SYMBOL, r))
       ) %>%
       dplyr::select(-common) %>% mutate(across(c(l, r), replace_keys, dir = dir))
   } else{
-    t <- dplyr::select(t, -one_of("lr")) %>% mutate(command = replace_keys(command, dir = dir))
+    t <- dplyr::select(t, -one_of("lr")) %>%
+      mutate(command = replace_keys(command, dir = dir)) %>%
+      dplyr::select(name, description, everything())
   }
   t <- t %>% arrange(mode) %>% group_by(mode) %>% gt()
   # TODO: HTMLをエスケープする方法として tab_row_group を使うものがあるが, rownames が表示されたままになる
@@ -185,13 +189,13 @@ to_table <- function(d, is_lr = F, dir = "../../../../img/xbox"){
   t$`_stub_df`[["group_label"]] <- map(t$`_stub_df`[["group_label"]], ~html(g_headings[[.x]]))
   if(is_lr){
     t <- t  %>%
-      cols_label(name = "名称", l = "左足が前", r = "右足が前") %>%
+      cols_label(name = "名称", description="概要", l = "左足が前", r = "右足が前") %>%
       tab_spanner("コマンド", columns = c("l", "r")) %>%
       fmt_markdown(c("l", "r"))
   } else {
     t <- t %>%
       fmt_markdown(columns = "command") %>%
-      cols_label(name = "名称", command = "コマンド")
+      cols_label(name = "名称", description="概要", command = "コマンド")
   }
   t %>%
     tab_style(
