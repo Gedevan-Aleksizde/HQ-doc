@@ -14,11 +14,12 @@ lang: ja
 toc: true
 format:
     html:
-        css: 
+        css:
             - css/gt.css
         html-math-method: katex
         include-in-header:
             - svgsnippet.html
+        mainfont: '"Hiragino Sans","ヒラギノ角ゴ ProN W3","Yu Gothic",游ゴシック,"Noto Sans CJK JP",Arial,sans-serif'
 metadata-files:
     - _website.yml
 resources:
