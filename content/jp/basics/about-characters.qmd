@@ -17,7 +17,7 @@ title: キャラクター一覧
     * [**タルナフスキ** _Tarnawski_](../characters/sabers/Tarnawski.qmd) (勝利時に大笑いするおじさん)
     * **サヴァ** Sava (未登場)
 * 長剣
-    * [**イザベラ** _Isabella_](../characters/longswords/Isabella.qmd) (女長剣使い)
+    * [**イザベッラ** _Isabella_](../characters/longswords/Isabella.qmd) (女長剣使い)
     * [**ジェラ神父** _Father Żera_](../characters/longswords/FatherZera.qmd) (神父)
 * レイピア
     * [**マリー** _Marie_](../characters/rapiers/Marie.qmd) (女レイピア使い, 帽子)

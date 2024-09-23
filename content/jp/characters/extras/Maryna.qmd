@@ -78,6 +78,7 @@ command_table("maryna", is_lr = F, "../../../../img/ps")
 
 :::
 
+
 ### 歴史的背景 {-}
 
 無法な振る舞いを繰り返す女貴族という造形は, アンナ゠ウァホドフスカ (Anna Łahodowska) という実在の人物を元にしている.
@@ -86,3 +87,9 @@ command_table("maryna", is_lr = F, "../../../../img/ps")
 
 <iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480330737253" height="527" width="345" frameborder="0" scrolling="no" ></iframe>
 トルコ風の籐製の盾, アンブラス城の博物館にて筆者撮影, (ワルシャワ軍事博物館にも展示してあったけど残ってる写真が不鮮明だった)
+
+
+### 参考文献
+
+::: {#refs}
+:::

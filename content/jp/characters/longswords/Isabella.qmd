@@ -1,8 +1,8 @@
 ---
-title: "イザベラ/Isabella"
+title: "イザベッラ/Isabella"
 ---
 
-## イザベラ/Isabella {#sec-Isabella}
+## イザベッラ/Isabella {#sec-Isabella}
 
 ```{r}
 source(here::here("script/common.R"))
@@ -12,7 +12,7 @@ source(here::here("script/common.R"))
 
 ![多くの構え, 比較画像はGetty Museum Collectionによる](/img/isabella.jpg)
 
-最初期から存在している長剣使いである. イタリア風のスタイルなので, 本稿ではイタリア語風に「イザベラ」と表記している.
+最初期から存在している長剣使いである. イタリア風のスタイルなので, 本稿ではイタリア語風に「イザベッラ」と表記している.
 
 初期からいるキャラクターだが, 多くのキャラクターが追加された現在でも, コマンドの複雑さでは一番ではないかと考える. 
 
@@ -85,5 +85,14 @@ command_table("isabella", is_lr = T, dir = "../../../../img/ps")
 
 だが, 実際の17世紀イタリアで未だにFioreのスタイルを守っている人間がいたのかは分からない.
 
+Fiore の残した文献[@hatcher2017Flower]には複数の構えに言及されており, ゲーム中では『貴婦人の構え/Posta di Donna』,『鉄の門の構え/Posta da Tutta Porta di Ferro』, 『猪の牙の構え/Posta di Dente di Cengiaro』が再現されており, さらに一部の動作では遷移中に一時的に『窓の構え/Posta di Fenestra』『正対の構え/Posta Frontale (別名 冠の構え, Posta da Corona)』^[当時の文献の綴りにはゆらぎがある.] に似た姿勢になるが, 構えとしては機能しない. それからFioreの文献には「剣を投げる構え」もあるが, HQで再現するのは難しそうである. ちなみに, ほとんどのキャラクターが使える「ロングガード」はおそらく, Fiore の文献にある Posta Longa の構えに由来するのではないか. ドイツの Meyer にも Langort という用語がある[@forgeng2016Art]が, Fiore のほうが古く, ドイツのより古い文献では別の呼び方であり^[@RDL2019 によれば, 文献によって記述が異なる. Lang Ort, Langen Ort という表記もあるが, 他の名称になっていることもある.], @dupuisNewManuscriptJoachim2021 が示唆するように Meyer はそれ以前の時代のドイツ式だけでなくイタリア式の影響を受けている可能性が高い.
 
-ゲーム中では『貴婦人の構え』,『鉄の門の構え』, 『猪の牙の構え』, それから『窓の構え』『王冠の構え(?)』 の4つが再現されているが, 原典ではこれらの構えにも複数のバリエーションが書かれている上に, さらに「二角獣の構え」「長い尾の構え」が存在する. 一部の動作では, 一瞬だけ窓の構えに似た姿勢になるが, 意味はあまりない. それから「剣を投げる構え」もあるが, HQで再現するのは難しそうである. ちなみに, ほとんどのキャラクターが使える「ロングガード」はおそらく, Fiore の文献にある Posta Longa の構えに由来する.^[ドイツの Meyer にも Langort という用語があるが, Fiore のほうが古く, ドイツのより古い文献では別の呼び方だったため, Meyer はイタリア式の影響を受けている可能性が高い.]
+
+Fioreの剣術は, 現代イタリアの剣術家である Federico Malagutti がいろいろと動画で言及している. 以下は Fiore スタイルに関するプレイリストである.
+
+{{< video https://www.youtube.com/watch?v=SQp-PjD9TzQ&list=PL1cX6GDKdz9qrAYlj4OB9_vdzqzP2YRc9&pp=iAQB >}}
+
+### 参考文献
+
+::: {#refs}
+:::

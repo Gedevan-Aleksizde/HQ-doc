@@ -8,6 +8,7 @@ title: "マリー/Marie"
 source(here::here("script/common.R"))
 ```
 
+
 ### 概要 {-}
 
 ![間合いを詰めて攻撃する技が多い](/img/marie.jpg)
@@ -19,6 +20,7 @@ source(here::here("script/common.R"))
 最初期はコマンドがとても少なかったが, 後のアップデートで現在の複数の構えを持つキャラクターになった.
 
 場面によって3Dモデルが髪の毛を束ねていたりいなかったりしているが, 最近統一された.
+
 
 ### 特性 {-}
 
@@ -73,10 +75,17 @@ command_table("marie", dir = "../../../../img/ps")
 * Offhand Parry は名前や動きから, 左手で相手の剣を払いつつ反撃する動作のようだが, 左手の当たり判定はどうなっているのかよくわからない (練習できてないのでよくわからない)
 * Circle と Circle to Lunge は入力待ち時間が厳しいのかミスなのかそれっぽい技が発動しない
 
+
 ### 歴史的背景 {-}
 
-開発者によると, 主にイタリアの Salvator Fabris のレイピア術を参考にしているらしい.^[https://www.youtube.com/channel/UCJEW7luxXj7XhzUGwpxW5OQ/community?lb=UgwVhPRM-shqv90PqhZ4AaABCQ]. 17世紀初頭に書かれた Scienza d'Arme のことだと思われる.
+開発者によると, 主にイタリアの Salvator Fabris のレイピア術を参考にしているらしい.^[https://www.youtube.com/channel/UCJEW7luxXj7XhzUGwpxW5OQ/community?lb=UgwVhPRM-shqv90PqhZ4AaABCQ]. 17世紀初頭に書かれた Scienza d'Arme のことだと思われる[@wiktenauer2024Scienza].
 
 <iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480308815366" height="368" width="345" frameborder="0" scrolling="no" ></iframe>
 
 名前がイタリアっぽくないと思っていたら, アーケードモードでフランスに関係のある人物だということが明かされた.
+
+
+### 参考文献
+
+::: {#refs}
+:::

@@ -14,6 +14,7 @@ source(here::here("script/common.R"))
 
 2022.04.09.0で追加された. Alexander だったり Aleksander だったり表記が統一されていない. Aleksander Denis という実在の人物をモチーフにしているため, ここでは Aleksander 表記にした. 以前は, 左右でコマンドが変化していたが, 2023.05.04の更新で廃止され左右共通となった. 中東やアフリカで見られるニムチャという名のサーベルを扱う.
 
+
 ### 特性 {-}
 
 基本性能は高いが足踏みとデフォルトの構えが独特である. その特性を理解しさえすれば様々な場面で戦えるだろう.
@@ -26,6 +27,7 @@ source(here::here("script/common.R"))
 
 {{< video /img/video/block/aleksander.mp4 >}}
 防御姿勢は力強い
+
 
 ### コマンド
 
@@ -58,6 +60,7 @@ command_table("alex", dir = "../../../../img/ps")
 
 :::
 
+
 ### 歴史的背景 {-}
 
 紹介動画によれば, [Aleksander Denis](http://historia.kozieglowy.org/r-3-kozieglowy-w-ksiestwie-siewierskim/) という実在の人物をモデルにしているらしい. アニメーションは [Da'Mon Stith](https://www.youtube.com/c/DaMonStith) というアフリカ武術の専門家と, 『鉄拳』シリーズに登場するカポエイリスタであるエディの両方を参考にしている. そして, どちらかというと後者の影響のほうが大きいようだ.
@@ -69,3 +72,9 @@ command_table("alex", dir = "../../../../img/ps")
 衣装のバリアントは18世紀に流行したジュパン (żupan) とコントゥシュ (kontusz) の組み合わせを参考にしている.^[パッチノートの修正内容で kontusz と書いている.]
 
 <iframe src="https://assets.pinterest.com/ext/embed.html?id=1144125480309825692" height="734" width="345" frameborder="0" scrolling="no" ></iframe>
+
+
+### 参考文献
+
+::: {#refs}
+:::

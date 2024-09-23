@@ -73,3 +73,9 @@ command_table("jacek2", is_lr = T)
 これも古いが, 祖父と共に実演している(アントニオルブリフスキファンクラブ個人サイトみたいになってきた)
 
 {{< video https://www.youtube.com/watch?v=M8Wp1DsfDDI >}}
+
+
+### 参考文献
+
+::: {#refs}
+:::

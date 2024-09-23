@@ -30,3 +30,7 @@ execute:
     echo: false
     warning: false
     output: "asis"
+bibliography:
+    - bibliography/HEMA.bib
+    - bibliography/History.bib
+bibliographystyle: chicago-author-date
