@@ -23,6 +23,7 @@ format:
 metadata-files:
     - _website.yml
 resources:
+    - "*.html"
     - "img/*"
     - "img/*/*"
 execute:
