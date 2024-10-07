@@ -2,7 +2,7 @@
 title: "ヤツェク/Jacek"
 ---
 
-## ヤツェク/Jacek Dydyński {#sec-Jacek}
+## ヤツェク゠ディディニスキ/Jacek Dydyński {#sec-Jacek}
 
 ```{r}
 source(here::here("script/common.R"))

@@ -2,7 +2,7 @@
 title: "サムエル/Samuel"
 ---
 
-## サムエル / Samuel {#sec-Samuel}
+## サムエル゠ズボロフスキ/Samuel Zborowski{#sec-Samuel}
 
 ```{r}
 source(here::here("script/common.R"))

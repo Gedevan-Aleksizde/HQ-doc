@@ -2,7 +2,7 @@
 title: "マリー/Marie"
 ---
 
-## マリー/Marie {#sec-Marie}
+## マリー゠ヴィゴロー/Marie Vigoreaux{#sec-Marie}
 
 ```{r}
 source(here::here("script/common.R"))
