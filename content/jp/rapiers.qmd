@@ -5,3 +5,7 @@ title: レイピア
 # レイピア {-}
 
 マリーやマルタなど, 直剣を使い突き攻撃を多用するキャラクターをここに分類する. 最小限の動きで出せる突き攻撃は読まれにくいが, 伸ばした剣は叩かれやすく, 一気に間合いを詰められると対処が難しくなる.
+
+- [マリー (Marie Vigoreaux)](characters/rapiers/Marie.qmd)
+- [マルタ (Marta)](characters/rapiers/Marta.qmd)
+- [カルクシュタイン (Kalkstein)](characters/rapiers/Kalkstein.qmd)
