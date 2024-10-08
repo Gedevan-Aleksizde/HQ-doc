@@ -11,7 +11,7 @@ source(here::here("script/common.R"))
 
 ### 概要 {-}
 
-![Steamストアページより](/img/maryna.jpg)
+![Steamストアページより](/img/maryna/official.jpg)
 
 v2024.08.16から登場した剣盾使いである. 勝利時に不気味な笑い方をするのでサムエル以上に悪役風である.
 

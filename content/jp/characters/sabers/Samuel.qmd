@@ -10,7 +10,7 @@ source(here::here("script/common.R"))
 
 ### 概要 {-}
 
-![キャラクター選択画面より](/img/samuel.jpg){width=50%}
+![キャラクター選択画面より](/img/samuel/selection.jpg){width=50%}
 
 2022.11.30 パッチより追加された. ロングガード以外にも上段と下段の構えがあり, 大振りな攻撃が少なく, フェイント攻撃が多いという特徴がある.
 

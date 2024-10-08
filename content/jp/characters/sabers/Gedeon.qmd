@@ -10,7 +10,7 @@ source(here::here("script/common.R"))
 
 ### 概要 {-}
 
-![キャラクター選択画面より](/img/gedeon.jpg){width=50%}
+![キャラクター選択画面より](/img/gedeon/selection.jpg){width=50%}
 
 最初期からいるキャラクターで, 肥満中年男性の見た目をしている. 最初期は左手にマグを持っていたが, 早い段階で削除された.
 
