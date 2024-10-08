@@ -10,7 +10,7 @@ source(here::here("script/common.R"))
 
 ### 概要 {-}
 
-![多くの構え, 比較画像はGetty Museum Collectionによる](/img/isabella.jpg)
+![多くの構え, 比較画像はGetty Museum Collectionによる](/img/isabella/fiore.jpg)
 
 最初期から存在している長剣使いである. イタリア風のスタイルなので, 本稿ではイタリア語風に「イザベッラ」と表記している.
 
