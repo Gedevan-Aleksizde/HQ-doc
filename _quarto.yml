@@ -1,6 +1,6 @@
-date: now
+date: "2024-08-04T16:25:32"
 date-modified: last-modified
-date-format: "YYYY-MM-DDTHH:mm:ss zzz"
+date-format: "YYYY-MM-DDTHH:mm:ss JST"
 author: "under-identified"
 booklanguage: ja
 license: "CC BY-SA"
@@ -11,6 +11,7 @@ project:
     type: website
     output-dir: public
 lang: ja
+language: custom-language.yml
 toc: true
 format:
     html:
