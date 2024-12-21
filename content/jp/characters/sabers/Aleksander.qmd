@@ -1,8 +1,8 @@
 ---
-title: "アレクサンデル/Aleksander"
+title: "ディニス/Dynis"
 ---
 
-## アレクサンデル/Aleksander {#sec-Aleksander}
+## アレクサンデル゠ディニス/Aleksander Dynis {#sec-Aleksander}
 
 ```{r}
 source(here::here("script/common.R"))
@@ -14,6 +14,7 @@ source(here::here("script/common.R"))
 
 2022.04.09.0で追加された. Alexander だったり Aleksander だったり表記が統一されていない. Aleksander Denis という実在の人物をモチーフにしているため, ここでは Aleksander 表記にした. 以前は, 左右でコマンドが変化していたが, 2023.05.04の更新で廃止され左右共通となった. 中東やアフリカで見られるニムチャという名のサーベルを扱う.
 
+2024.12.18 の更新で, ゲーム内での表示名が Aleksander から Dynis へと変更された. タルナフスキとの混同を避けるための変更だという.^[https://store.steampowered.com/news/app/1000360/view/517448572319301718]
 
 ### 特性 {-}
 
