@@ -6,7 +6,7 @@ booklanguage: ja
 license: "CC BY-SA"
 monofont: "Ricty"
 link-citations: true
-fontsize: 12pt
+fontsize: 14pt
 project:
     type: website
     output-dir: public
@@ -21,6 +21,7 @@ format:
         include-in-header:
             - svgsnippet.html
         mainfont: '"Hiragino Sans","ヒラギノ角ゴ ProN W3","Yu Gothic",游ゴシック,"Noto Sans CJK JP",Arial,sans-serif'
+        fontsize: 14pt
 metadata-files:
     - _website.yml
 resources:
